@@ -1,0 +1,51 @@
+{
+    "subtitle":"DESARROLLADOR FRONT-END Y DISEÑADOR GRÁFICO",
+    "about":{
+        "title":"SOBRE MÍ",
+        "subtitle": "HOLA SOY JUAN 🖐️,",
+        "descrip": "Soy un desarrollador de software junior orientado al desarrollo de aplicaciones web, también muy interesado en el diseño gráfico. <br/>Cómodo utilizando JavaScript y Python, con un conocimiento básico de Node. <br/>Mi objetivo profesional es aprender lo máximo que pueda de mis primeras experiencias",
+        "cvtext":"DESCARGAR CV"
+    },
+    "proandski":{
+        "projects":{
+            "title":"PROYECTOS",
+            "pro1": {
+                "title": "1. BookList",
+                "descrip":  "Es una aplicación para organizar mi biblioteca personal hecha con el framework de <a target=\"_blank\" href=\"https://www.python.org/\">Python</a>, <a target=\"_blank\" href=\"https://www.djangoproject.com/\">Django</a><br />\nEn este projecto aprendí como utilizar bases de datos con <a target=\"_blank\" href=\"https://www.sqlite.org/index.html\">SQLite</a> y el sistema de url's\nde <a target=\"_blank\" href=\"https://www.djangoproject.com/\">Django</a>, también es mi primera experiencia con <a target=\"_blank\" href=\"https://www.python.org/\">Python</a>.<br />\nEn el futuro quiero agregar un sistema de edición y borrado de elementos, además de componetizar la aplicación con React <br />",
+                "date": "Febrero - 2023"
+            },
+            "pro2": {
+                "title": "2. Vite Calculator",
+                "descrip" : " Una calculadora básica hecha con <a href=\"https://vitejs.dev/\" target=\"_blank\">Vite.js</a>, una herramienta front-end para <a href=\"https://es.react.dev/\" target=\"_blank\">React.js</a>. <br /> En este projecto aprendí a utilizar los hooks de React, y algunos estilos de CSS. El problema mas grande que tuve fue como calcular correctamente las operaciones aritméticas. <br /> En el futuro planeo expandir la aplicación añadiendo funcionalidades como raíces cuadradas y potencias<br />",
+                "date": "Julio - 2023"
+            },
+            "pro3":{
+                "title": "3. Code-Note App",
+                "descrip": "Es una aplicación de notas personal hecha con el framework de <a target=\"_blank\" href=\"https://es.wikipedia.org/wiki/JavaScript\">Javascript</a>, <a target=\"_blank\" href=\"https://www.electronjs.org/es/\">Electron</a>. <br /> En este proyecto aprendí a usar la Web API de \"localStorage\" para almacenar los objetos. Y como manipular elementos del DOM con sus respectivas animaciones via script. <br /> En el futuro quiero rehacerlo usando React y usar alguna base de dataos como <a target=\"_blank\" href=\"https://www.sqlite.org/index.html\">SQLite</a>.<br />",
+                "date" : "Junio - 2023"
+            }
+        },
+        "skills": {
+            "title": "HABILIDADES",
+            "subtitles":{
+                "front" : "Front-End",
+                "back": "Back-End",
+                "apps": "Apps",
+                "lan": "Lenguajes", 
+                "soft": {
+                    "title":"Habilidades Blandas",
+                    "skills":{
+                        "cre": "Creatividad",
+                        "team": "Trabajo en equipo",
+                        "deci" : "Toma de decisiones",
+                        "self": "Autodidacta",
+                        "ent": "Entusiasmo"
+                    }
+                }
+            }
+        } 
+    },
+    "contact":{
+        "title": "CONTACTO"
+    }
+}

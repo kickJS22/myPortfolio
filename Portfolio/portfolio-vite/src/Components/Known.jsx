@@ -1,12 +1,11 @@
-import { useRef, useEffect } from "react";
-import { ObserverFunctionallity } from "./Observer";
+import { useEffect, useContext } from "react";
+import { ObserverFunctionallity } from "./Functions/Observer";
+import { mouseOn, mouseOut } from "./Functions/mouseFunctions";
+import { LanThContext } from "../Context/ContextProvider";
+import parse from 'html-react-parser';
 export function Skills() {
-    const SkillsH1Ref = useRef();
-    const SkillsLiG1 = useRef()
-    const SkillsLiG2 = useRef()
-    const SkillsLiG3 = useRef()
-    const SkillsLiG4 = useRef()
-    const SkillsLiG5 = useRef()
+    const { en, es, lan } = useContext(LanThContext)
+    const {SkillsH1Ref, SkillsLiG1, SkillsLiG2, SkillsLiG3, SkillsLiG4, SkillsLiG5} = useContext(LanThContext)
     useEffect(() => {
         ObserverFunctionallity(SkillsH1Ref);
         ObserverFunctionallity(SkillsLiG1, "1s");
@@ -15,19 +14,37 @@ export function Skills() {
         ObserverFunctionallity(SkillsLiG4, "1.7")
         ObserverFunctionallity(SkillsLiG5, "2.1s");
     }, [])
+    
+    const {JSref, Reref, Viref, Eleref, Htref, Csref, Saref, Pyref, Djref, SQref} = useContext(LanThContext);
+
+    const proj1 = [JSref,Htref,Csref,Saref,Pyref,Djref,SQref]
+    const proj2=[Reref,JSref,Viref,Htref,Csref,Saref];
+    const proj3= [JSref,Htref,Csref,Eleref]
+
     return (
         <article id="proAndSkiCont" >
             <section id="projects">
-                <h1>PROJECTS</h1>
-                <div>
-                    <h2>1. Vite Calculator</h2>
+                <h1>{lan == "en" ? en.proandski.projects.title : es.proandski.projects.title}</h1>
+                <div onMouseEnter={()=>{mouseOn(proj1)}} onMouseLeave={()=>{mouseOut(proj1)}} >
+                    <h2>{lan == "en" ? en.proandski.projects.pro1.title : es.proandski.projects.pro1.title}</h2>
                     <span>
                         <p>
-                            Is a basic calculator app made it with the front-end tooling <a href="https://vitejs.dev/" target="_blank">Vite.js </a>
-                            for <a href="https://es.react.dev/" target="_blank">React.js</a>. <br /> In this project i've learnt the usage of React's Hooks,
-                            and some CSS styles. The major problem i've faced was properly calculating arithmetic operations. <br /> In the future I plan to
-                            expand this application adding functionalities such as square roots or powers <br />
-                            <label>July - 2023</label>
+                            {parse(lan == "en" ? en.proandski.projects.pro1.descrip : es.proandski.projects.pro1.descrip)}
+                            <label>{lan == "en" ? en.proandski.projects.pro1.date : es.proandski.projects.pro1.date}</label>
+                        </p>
+                        <img src="" alt="Falta Foto" />
+
+                    </span>
+                    <footer>
+                        <a href="https://github.com/kickJS22/BookList" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="" /></a>
+                    </footer>
+                </div>
+                <div onMouseEnter={()=>{mouseOn(proj2)}} onMouseLeave={()=>{mouseOut(proj2)}}>
+                    <h2>{lan == "en" ? en.proandski.projects.pro2.title : es.proandski.projects.pro2.title}</h2>
+                    <span>
+                        <p>
+                            {parse(lan == "en" ? en.proandski.projects.pro2.descrip : es.proandski.projects.pro2.descrip)}
+                            <label>{lan == "en" ? en.proandski.projects.pro2.date : es.proandski.projects.pro2.date}</label>
                         </p>
                         <img src="ProjectsPhotos/viteCalculator.png" alt="Vite Calculator.png" />
 
@@ -37,45 +54,48 @@ export function Skills() {
                         <a href="https://github.com/kickJS22/ViteCalculator" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="" /></a>
                     </footer>
                 </div>
-                <div>
-                    <h2>2. Book List</h2>
-                    <p></p>
-                    <img src="" alt="" />
-                    <a href=""></a>
-                </div>
-                <div>
-                    <h2>3. Code App</h2>
-                    <p></p>
-                    <img src="" alt="" />
-                    <a href=""></a>
+                <div onMouseEnter={()=>{mouseOn(proj3)}} onMouseLeave={()=>{mouseOut(proj3)}}>
+                    <h2>{lan == "en" ? en.proandski.projects.pro3.title : es.proandski.projects.pro3.title}</h2>
+                    <span>
+                        <p>
+                            {parse(lan == "en" ? en.proandski.projects.pro3.descrip : es.proandski.projects.pro3.descrip)}
+                            <label>{lan == "en" ? en.proandski.projects.pro3.date : es.proandski.projects.pro3.date}</label>
+                        </p>
+                        <img src="" alt="Falta Foto" />
+
+                    </span>
+                    <footer>
+                        <a href="https://github.com/kickJS22/CodeNote-electron" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="" /></a>
+                    </footer>
                 </div>
             </section>
 
             <section id="skills">
-                <h1 id="SkillsH1" ref={SkillsH1Ref}>SKILLS</h1>
+                <h1 id="SkillsH1" ref={SkillsH1Ref}>{lan == "en" ? en.proandski.skills.title : es.proandski.skills.title}</h1>
                 <ul>
                     <li ref={SkillsLiG1}>
                         <div>
-                            <h4>React</h4>
-                            <h4>JavaScript</h4>
-                            <h4>Vite</h4>
-                            <h4>Electron</h4>
-                            <h4>Html</h4>
-                            <h4>Css</h4>
-                            <h4>Sass</h4>
-                            <h4>Python</h4>
-                            <h4>Django</h4>
+                            <h4 ref={Reref}>React</h4>
+                            <h4 ref={JSref}>JavaScript</h4>
+                            <h4 ref={Viref}>Vite</h4>
+                            <h4 ref={Eleref}>Electron</h4>
+                            <h4 ref={Htref}>Html</h4>
+                            <h4 ref={Csref}>Css</h4>
+                            <h4 ref={Saref}>Sass</h4>
+                            <h4 ref={Pyref}>Python</h4>
+                            <h4 ref={Djref}>Django</h4>
+                            <h4>C#</h4>
                         </div>
-                        <h2>Front-End</h2>
+                        <h2>{lan == "en" ? en.proandski.skills.subtitles.front : es.proandski.skills.subtitles.front}</h2>
                     </li>
 
                     <li ref={SkillsLiG2}>
                         <div>
                             <h4>Node</h4>
                             <h4>Express</h4>
-                            <h4>SQLite</h4>
+                            <h4 ref={SQref}>SQLite</h4>
                         </div>
-                        <h2>Back-End</h2>
+                        <h2>{lan == "en" ? en.proandski.skills.subtitles.back : es.proandski.skills.subtitles.back}</h2>
                     </li>
 
                     <li ref={SkillsLiG3}>
@@ -84,7 +104,7 @@ export function Skills() {
                             <h4>Premiere Pro</h4>
                             <h4>Illustrator</h4>
                         </div>
-                        <h2>Apss</h2>
+                        <h2>{lan == "en" ? en.proandski.skills.subtitles.apps : es.proandski.skills.subtitles.apps}</h2>
                     </li>
 
                     <li ref={SkillsLiG4}>
@@ -92,18 +112,18 @@ export function Skills() {
                             <h4>Spanish</h4>
                             <h4>English</h4>
                         </div>
-                        <h2>Languages</h2>
+                        <h2>{lan == "en" ? en.proandski.skills.subtitles.lan : es.proandski.skills.subtitles.lan}</h2>
                     </li>
 
                     <li ref={SkillsLiG5}>
                         <div>
-                            <h4>Creativity</h4>
-                            <h4>Team-work</h4>
-                            <h4>Decision Making</h4>
-                            <h4>Self Learning</h4>
-                            <h4>Enthusiasm</h4>
+                            <h4>{lan == "en" ? en.proandski.skills.subtitles.soft.skills.cre : es.proandski.skills.subtitles.soft.skills.cre}</h4>
+                            <h4>{lan == "en" ? en.proandski.skills.subtitles.soft.skills.team : es.proandski.skills.subtitles.soft.skills.team}</h4>
+                            <h4>{lan == "en" ? en.proandski.skills.subtitles.soft.skills.deci : es.proandski.skills.subtitles.soft.skills.deci}</h4>
+                            <h4>{lan == "en" ? en.proandski.skills.subtitles.soft.skills.self : es.proandski.skills.subtitles.soft.skills.self}</h4>
+                            <h4>{lan == "en" ? en.proandski.skills.subtitles.soft.skills.ent : es.proandski.skills.subtitles.soft.skills.ent}</h4>
                         </div>
-                        <h2>Soft-Skills</h2>
+                        <h2>{lan == "en" ? en.proandski.skills.subtitles.soft.title : es.proandski.skills.subtitles.soft.title}</h2>
                     </li>
                 </ul>
             </section>

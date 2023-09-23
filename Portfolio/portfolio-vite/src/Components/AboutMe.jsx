@@ -1,6 +1,10 @@
 import { useRef, useEffect } from "react";
-import { ObserverFunctionallity } from "./Observer";
+import { ObserverFunctionallity } from "./Functions/Observer";
+import { useContext } from "react";
+import { LanThContext } from "../Context/ContextProvider";
+import parse from 'html-react-parser';
 export function About() {
+    const { en,es,lan } = useContext(LanThContext)
     const h1Ref = useRef();
     const aRef = useRef();
     const pRef = useRef()
@@ -13,15 +17,12 @@ export function About() {
     },[]);
     return (
         <section id="about">
-            <h1 ref={h1Ref}>HI I'M JUAN 🖐️,</h1>
+            <h1 ref={h1Ref}>{lan == "en" ? en.about.subtitle : es.about.subtitle}</h1>
             <div>
-                <p ref={pRef}> A junior software developer oriented to create web applications, also highly interested in graphic design.<br></br>
-                    Comfortable in the utilization of <span>JavaScript</span> and <span>Python</span>, and a basic understanding of backend with Node.<br></br>
-                    My professional objective is learning the maximum that i can of my first experiences.
-                </p>
+                <p ref={pRef}>{parse(lan == "en" ? en.about.descrip : es.about.descrip)}</p>
                 <img ref={imgRef} src="../../public/perfil.jpg" alt="" />
             </div>
-            <a ref={aRef} href="../../public/CV's/English-CV.pdf" target="_blank" rel="noopener noreferrer" download={"Juan_Ignacio_Bustillos_CV.pdf"}>DOWNLOAD CV</a>
+            <a ref={aRef} href={ lan == "en" ? "CV's/English-CV.pdf" : "CV's/Español-CV.pdf"} target="_blank" rel="noopener noreferrer" download={"Juan_Ignacio_Bustillos_CV.pdf"}>{lan == "en" ? en.about.cvtext : es.about.cvtext}<img src="iconsSVGS/arrowICON.png" alt="" /></a>
         </section>
     )
 }

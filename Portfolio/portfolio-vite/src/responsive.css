@@ -1,0 +1,16 @@
+/* 600 */
+@media (max-width: 600px) {
+    #proAndSkiCont{
+        scroll-snap-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #skills{
+        position: initial;
+    }
+    
+}

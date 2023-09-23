@@ -8,12 +8,16 @@
     src: url("../public/Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0px;
     margin: 0px;
     background-color: white;
     overflow-x: hidden;
-
+    scroll-snap-type: y proximity;
 }
 
 nav {
@@ -32,7 +36,7 @@ nav>h1 {
     z-index: 100;
     cursor: default;
     padding: 0px;
-    margin-top: 20vw;
+    margin-top: 15vw;
 }
 
 nav>h2 {
@@ -89,6 +93,80 @@ nav>h2 {
     top: 40vh;
 }
 
+#stickyHeading{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: sticky;
+    width: 70%;
+    z-index: 0;
+}
+
+#stickyHeading>ul{
+    display: flex;
+    width: 100%;
+    height: 2%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(10px);
+}
+
+#stickyHeading>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 0.8vw;
+    border-radius: 2vw;
+    font-family: "Montserrat";
+    padding: 0.4vw;
+    margin: 0.2vw;
+    
+}
+
+#stickyHeading>ul>li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#stickyHeading>ul>li>img{
+    object-fit:fill;
+    width: 2vw;
+    height: auto;
+}
+#stickyHeading>ul>li>span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1vw;
+    border: 0.2vw solid black;
+    width: 2.5vw;
+    height: 0.7vw;
+    border-radius: 1vw;
+    background-size:cover;
+    transition: 1s;
+    background-image: url("Flags/Usa.png");
+}
+
+#stickyHeading>ul>li>span>input{
+    width: 0.6vw;
+    height: 0.6vw;
+    border-radius: 50%;
+    appearance:none;
+    background-color: black;
+    display: hidden;
+    transition: 0.5s;
+    transform: translateX(0vw);
+}
+
+
+
+
+
+
 #PortInfo {
     display: flex;
     flex-direction: column;
@@ -98,6 +176,7 @@ nav>h2 {
 }
 
 #about {
+    scroll-snap-align: center;
     width: 80vw;
     height: auto;
     margin-bottom: 20vw;
@@ -112,6 +191,7 @@ nav>h2 {
     font-weight: 900;
     margin: 0;
     margin-bottom: 7vw;
+    z-index: 1000;
 }
 
 
@@ -163,10 +243,21 @@ nav>h2 {
     transform: translateY(-3vh);
 }
 
+#about>a>img{
+    position: relative;
+    top: -0.6vw;
+    rotate: 90deg;
+    padding-left: 1vw;
+    width: 0.8vw;
+    height: 0.8vw;
+}
+
 #proAndSkiCont{
+    scroll-snap-align: center;
     display: flex;
     flex-direction: row;
     width: 100%;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -175,8 +266,10 @@ nav>h2 {
 }
 
 #projects>h1{
+    z-index: 1000;
     text-align: center;
     margin: 0;
+    margin-top: 4vw;
     font-family: "Montserrat";
     font-size: 3vw;
     font-weight: 900;
@@ -259,11 +352,15 @@ nav>h2 {
     transform: translateY(-0.3vw);
 }
 #skills {
+    margin-top: 4vw;
+    z-index: 1000;
     width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    top: 0;
+    position: sticky;
 }
 
 #skills>h1 {
@@ -295,7 +392,7 @@ nav>h2 {
     justify-content: center;
     align-items: center;
     height: 8vw;
-    max-width: 19vw;
+    max-width: 20vw;
     font-family: "Montserrat";
 }
 
@@ -327,4 +424,43 @@ nav>h2 {
     background-color: rgb(173, 163, 163);
     /* flex-basis: 4vw; */
     margin: 0.2vw;
+}
+
+#contact{
+    scroll-snap-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vw;
+}
+
+#contact>h1{
+    text-align: center;
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 6vw;
+    font-weight: 900;
+}
+
+#contact>section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+#contact>section>a{
+    width: 7vw;
+    height: 7vw;
+    padding: 2vw;
+}
+#contact>section>a>img{
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
+    transition: 0.3s;
+}
+
+#contact>section>a>img:hover{
+    outline: 0.5vw solid blueviolet;
+    outline-offset: 0.4vw;
 }
