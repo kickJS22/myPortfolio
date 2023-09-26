@@ -1,6 +1,258 @@
 /* 600 */
 @media (max-width: 600px) {
-    #proAndSkiCont{
+
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-color: white;
+        overflow-x: hidden;
+        scroll-snap-type: y proximity;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20vw;
+    }
+
+    nav>h1 {
+        font-size: 6vw;
+        font-family: "Montserrat";
+        font-weight: 900;
+        color: black;
+        z-index: 100;
+        cursor: default;
+        padding: 0px;
+        margin-top: 15vw;
+    }
+
+    nav>h2 {
+        font-size: 2.5vw;
+        font-family: "Montserrat Italic";
+        font-weight: 700;
+        color: black;
+        z-index: 100;
+        cursor: default;
+    }
+
+    #bus {
+        font-size: 6vw;
+        background: #CFA108;
+        background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 100;
+        transition: 0.5s;
+        color: black;
+    }
+
+    #bus:hover {
+        color: #CFA108;
+    }
+
+
+    #circleContainer {
+        position: static;
+    }
+
+    #circleContainer>img {
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        z-index: 0;
+
+    }
+
+    #circle1 {
+
+        right: -15vw;
+        top: -40vh;
+    }
+
+    #circle2 {
+        top: 5vh;
+        left: -17vw;
+    }
+
+    #circle3 {
+
+        right: -14vw;
+        top: 40vh;
+    }
+
+    #stickyHeading {
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+        position: sticky;
+        width: 100%;
+        z-index: 0;
+    }
+
+    #stickyHeading>ul {
+        display: flex;
+        width: 100%;
+        height: 2%;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    #stickyHeading>ul>li>a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-size: 3vw;
+        font-family: "Montserrat";
+        padding: 1vw;
+        margin: 1vw;
+        text-wrap: wrap;
+
+    }
+
+    #stickyHeading>ul>li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    #stickyHeading>ul>li>img {
+        object-fit: fill;
+        width: 2vw;
+        height: auto;
+    }
+
+    #stickyHeading>ul>li>span {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 1vw;
+        border: 0.2vw solid black;
+        width: 7vw;
+        height: 2vw;
+        border-radius: 1vw;
+        background-size: cover;
+        transition: 1s;
+        background-image: url("Flags/Usa.png");
+    }
+
+    #stickyHeading>ul>li>span>input {
+        width: 1.8vw;
+        height: 1.8vw;
+        border-radius: 50%;
+        appearance: none;
+        background-color: black;
+        display: hidden;
+        transition: 0.5s;
+        transform: translateX(0vw);
+    }
+
+
+    #contact>a{
+        width: 7vw;
+        height: 7vw;
+        padding: 1vw;
+    }
+    #contact>a>img{
+        border-radius: 50%;
+        width: 7vw;
+        height: 7vw;
+        transition: 0.3s;
+    }
+    
+    #contac
+
+
+
+    #PortInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #about {
+        scroll-snap-align: center;
+        width: 80vw;
+        height: auto;
+        margin-bottom: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #about>h1 {
+        font-family: "Montserrat Italic";
+        font-size: 9vw;
+        font-weight: 900;
+        margin: 0;
+        margin-bottom: 7vw;
+        z-index: 1000;
+    }
+
+
+    #about>div {
+        width: 80vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #about>div>img {
+        border-radius: 2vw;
+        height: 30vw;
+        width: auto;
+
+    }
+
+    #about>div>p {
+        height: auto;
+        width: 60vw;
+        font-family: "Montserrat";
+        font-size: 3vw;
+
+        justify-self: flex-start;
+        align-self: flex-start;
+
+    }
+
+    #about>a {
+        padding: 2vw;
+        text-align: center;
+        font-family: "Montserrat Italic";
+        color: white;
+        border-radius: 4vw;
+        font-size: 3vw;
+        font-weight: 900;
+        border: none;
+        background-color: grey;
+        width: 40vw;
+        height: 3.7vw;
+        align-self: center;
+        text-decoration: none;
+        background: #CFA108;
+        background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+        transition: 0.7s;
+    }
+
+    #about>a>img {
+        position: relative;
+        top: -2vw;
+        rotate: 90deg;
+        padding-left: 4vw;
+        width: 2vw;
+        height: 2vw;
+    }
+
+    #proAndSkiCont {
         scroll-snap-align: center;
         display: flex;
         flex-direction: column;
@@ -9,8 +261,163 @@
         justify-content: center;
     }
 
-    #skills{
-        position: initial;
+    #projects {
+        width: 90vw;
+    }
+
+    #projects>h1 {
+        z-index: 1000;
+        text-align: center;
+        margin: 0;
+        margin-top: 4vw;
+        font-family: "Montserrat";
+        font-size: 8vw;
+        font-weight: 900;
+    }
+
+    #projects>div {
+        display: flex;
+        flex-direction: column;
+        padding: 1vw;
+        margin: 4vw;
+        border-radius: 1vw;
+        border: 0.3vw solid #CFA108;
+
+    }
+
+    #projects>div>h2 {
+        font-family: "Montserrat Italic";
+        font-size: 5vw;
+    }
+
+    #projects>div>span {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #projects>div>span>p {
+        width: 50vw;
+        font-size: 2.5vw;
+        padding-right: 1vw;
+        font-family: "Montserrat";
+        line-height: 3vw;
+    }
+
+    #projects>div>span>p>a {
+        font-weight: 800;
+        background: #CFA108;
+        background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: underline 0.13vw blueviolet;
+    }
+
+    #projects>div>span>p>label {
+        font-weight: 800;
+        color: blueviolet;
+    }
+
+    #projects>div>span>img {
+        align-self: center;
+        border-radius: 1vw;
+        width: 30vw;
+        height: 18vw;
+    }
+
+    #projects>div>footer {
+        padding: 0;
+        align-self: flex-start;
+
+    }
+
+    #projects>div>footer>a {
+        height: 6vw;
+        width: 6vw;
+        margin-right: 1vw;
+    }
+
+
+    #projects>div>footer>a>img {
+        border-radius: 0.2vw;
+        height: 6vw;
+        width: 6vw;
+        transition: 0.5s;
+    }
+
+    #projects>div>footer>a:hover {
+        transform: translateY(-0.3vw);
+    }
+
+    #projects>div>footer>a:hover img {
+        transform: translateY(-0.3vw);
+    }
+
+    #skills {
+        margin-top: 4vw;
+        z-index: 1000;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
     }
     
+    #skills>h1 {
+        margin: 0;
+        font-family: "Montserrat";
+        font-size: 8vw;
+        font-weight: 900;
+    }
+    
+    
+    #skills>ul {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #skills>ul>li {
+        margin: 10vw;
+        padding: 3vw;
+        border: 0.6vw solid #C270CF;
+        border-radius: 3vw;
+        max-width: 90vw;
+        width: 80%;
+        height: 50vw;
+        font-family: "Montserrat";
+    }
+
+    #skills>ul>li>h2 {
+        cursor: default;
+        font-size: 6vw;
+        padding: 2vw;
+        border: 0.8vw solid #CFA108;
+        border-radius: 1vw;
+
+    }
+
+    #skills>ul>li>div {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #skills>ul>li>div>h4 {
+        cursor: default;
+        transition: 0.5s;
+        font-size: 4vw;
+        border-radius: 1.5vw;
+        border: 0.150vw solid black;
+        color: white;
+        text-align: center;
+        padding: 1vw;
+        background-color: rgb(173, 163, 163);
+        /* flex-basis: 4vw; */
+        margin: 1vw;
+    }
+
+
 }

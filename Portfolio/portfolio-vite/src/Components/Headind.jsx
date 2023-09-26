@@ -20,9 +20,14 @@ export function Nav() {
                     </li>
                 </ul>
             </nav>
-            <nav>
+            <nav id="mainText">
                 <h1>JUAN IGNACIO <span id="bus">BUSTILLOS</span></h1>
                 <h2>{lan == "en" ? en.subtitle : es.subtitle}</h2>
+                <section id="contact">
+                    <a target="_blank" href="https://github.com/kickJS22"><img src="iconsSVGS/icons8-github violeta.svg" alt="Github.svg" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/juan-ignacio-bustillos-800b2b271/"><img src="iconsSVGS/icons8-linkedin.svg" alt="Linkedin.svg" /></a>
+                    <a href="mailto:bustillosjuani16@gmail.com"><img src="iconsSVGS/icons8-gmail.svg" alt="Email.svg" /></a>
+                </section>
             </nav>
         </>
     )

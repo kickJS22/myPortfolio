@@ -20,12 +20,84 @@ body {
     scroll-snap-type: y proximity;
 }
 
+#mainText{
+    margin-bottom: 20vw;
+}
+
+#stickyHeading{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 0;
+}
+
+#stickyHeading>ul{
+    display: flex;
+    width: 100%;
+    height: 2%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(10px);
+}
+
+#stickyHeading>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 0.8vw;
+    border-radius: 2vw;
+    font-family: "Montserrat";
+    padding: 0.4vw;
+    margin: 0.2vw;
+    
+}
+
+#stickyHeading>ul>li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#stickyHeading>ul>li>img{
+    object-fit:fill;
+    width: 2vw;
+    height: auto;
+}
+#stickyHeading>ul>li>span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1vw;
+    border: 0.2vw solid black;
+    width: 2.5vw;
+    height: 0.7vw;
+    border-radius: 1vw;
+    background-size:cover;
+    transition: 1s;
+    background-image: url("Flags/Usa.png");
+}
+
+#stickyHeading>ul>li>span>input{
+    width: 0.6vw;
+    height: 0.6vw;
+    border-radius: 50%;
+    appearance:none;
+    background-color: black;
+    display: hidden;
+    transition: 0.5s;
+    transform: translateX(0vw);
+}
+
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20vw;
 }
 
 nav>h1 {
@@ -93,78 +165,31 @@ nav>h2 {
     top: 40vh;
 }
 
-#stickyHeading{
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    position: sticky;
-    width: 70%;
-    z-index: 0;
-}
-
-#stickyHeading>ul{
+#contact{
     display: flex;
-    width: 100%;
-    height: 2%;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    padding: 0;
-    margin: 0;
-    backdrop-filter: blur(10px);
+    scroll-snap-align: center;
+    margin-top: 3vw;
+    z-index: 1000;
 }
 
-#stickyHeading>ul>li>a{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-    font-size: 0.8vw;
-    border-radius: 2vw;
-    font-family: "Montserrat";
-    padding: 0.4vw;
-    margin: 0.2vw;
-    
+#contact>a{
+    width: 5vw;
+    height: 5vw;
+    padding: 1vw;
 }
-
-#stickyHeading>ul>li{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-#stickyHeading>ul>li>img{
-    object-fit:fill;
-    width: 2vw;
-    height: auto;
-}
-#stickyHeading>ul>li>span{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 1vw;
-    border: 0.2vw solid black;
-    width: 2.5vw;
-    height: 0.7vw;
-    border-radius: 1vw;
-    background-size:cover;
-    transition: 1s;
-    background-image: url("Flags/Usa.png");
-}
-
-#stickyHeading>ul>li>span>input{
-    width: 0.6vw;
-    height: 0.6vw;
+#contact>a>img{
     border-radius: 50%;
-    appearance:none;
-    background-color: black;
-    display: hidden;
-    transition: 0.5s;
-    transform: translateX(0vw);
+    width: 5vw;
+    height: 5vw;
+    transition: 0.3s;
 }
 
-
-
-
+#contact>a>img:hover{
+    outline: 0.5vw solid blueviolet;
+    outline-offset: 0.4vw;
+}
 
 
 #PortInfo {
@@ -426,41 +451,4 @@ nav>h2 {
     margin: 0.2vw;
 }
 
-#contact{
-    scroll-snap-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20vw;
-}
 
-#contact>h1{
-    text-align: center;
-    margin: 0;
-    font-family: "Montserrat";
-    font-size: 6vw;
-    font-weight: 900;
-}
-
-#contact>section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3vw;
-}
-
-#contact>section>a{
-    width: 7vw;
-    height: 7vw;
-    padding: 2vw;
-}
-#contact>section>a>img{
-    border-radius: 50%;
-    width: 7vw;
-    height: 7vw;
-    transition: 0.3s;
-}
-
-#contact>section>a>img:hover{
-    outline: 0.5vw solid blueviolet;
-    outline-offset: 0.4vw;
-}
