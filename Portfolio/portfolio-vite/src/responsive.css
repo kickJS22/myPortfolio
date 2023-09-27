@@ -208,14 +208,13 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     #about>div>img {
         border-radius: 2vw;
-        height: 30vw;
+        height: 40vw;
         width: auto;
-
+		margin: 5vw;
     }
 
     #about>div>p {
