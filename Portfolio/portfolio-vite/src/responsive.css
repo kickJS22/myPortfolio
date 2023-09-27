@@ -18,27 +18,31 @@
     }
 
     nav>h1 {
-        font-size: 6vw;
+        font-size: 12vw;
         font-family: "Montserrat";
         font-weight: 900;
         color: black;
         z-index: 100;
         cursor: default;
         padding: 0px;
-        margin-top: 15vw;
+        margin-top: 30vw;
+		text-align:center;
+		text-wrap:wrap;
     }
 
     nav>h2 {
-        font-size: 2.5vw;
+        font-size: 5vw;
         font-family: "Montserrat Italic";
         font-weight: 700;
         color: black;
         z-index: 100;
         cursor: default;
+		text-align:center;
+        text-wrap:wrap;
     }
 
     #bus {
-        font-size: 6vw;
+        font-size: 12vw;
         background: #CFA108;
         background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
         -webkit-background-clip: text;
@@ -154,20 +158,20 @@
 
 
     #contact>a{
-        width: 7vw;
-        height: 7vw;
+		margin-top:10vw;
+        width: 10vw;
+        height: 10vw;
         padding: 1vw;
     }
     #contact>a>img{
         border-radius: 50%;
-        width: 7vw;
-        height: 7vw;
+        width: 10vw;
+        height: 10vw;
         transition: 0.3s;
     }
-    
-    #contac
-
-
+   	#about>a:hover {
+	     transform: translateY(0);
+	} 
 
     #PortInfo {
         display: flex;
@@ -192,6 +196,7 @@
         font-size: 9vw;
         font-weight: 900;
         margin: 0;
+		margin-top:2vw;
         margin-bottom: 7vw;
         z-index: 1000;
     }
@@ -245,7 +250,7 @@
 
     #about>a>img {
         position: relative;
-        top: -2vw;
+        top: -2.2vw;
         rotate: 90deg;
         padding-left: 4vw;
         width: 2vw;

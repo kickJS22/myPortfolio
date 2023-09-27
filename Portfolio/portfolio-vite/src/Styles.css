@@ -131,9 +131,6 @@ nav>h2 {
     color: black;
 }
 
-#bus:hover {
-    color: #CFA108;
-}
 
 
 #circleContainer {
@@ -186,10 +183,7 @@ nav>h2 {
     transition: 0.3s;
 }
 
-#contact>a>img:hover{
-    outline: 0.5vw solid blueviolet;
-    outline-offset: 0.4vw;
-}
+
 
 
 #PortInfo {
@@ -264,9 +258,6 @@ nav>h2 {
     transition: 0.7s;
 }
 
-#about>a:hover {
-    transform: translateY(-3vh);
-}
 
 #about>a>img{
     position: relative;
@@ -369,13 +360,6 @@ nav>h2 {
     transition: 0.5s;
 }
 
-#projects>div>footer>a:hover{
-    transform: translateY(-0.3vw);
-}
-
-#projects>div>footer>a:hover img{
-    transform: translateY(-0.3vw);
-}
 #skills {
     margin-top: 4vw;
     z-index: 1000;

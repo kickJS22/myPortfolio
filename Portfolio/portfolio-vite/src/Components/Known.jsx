@@ -84,6 +84,7 @@ export function Skills() {
                             <h4 ref={Saref}>Sass</h4>
                             <h4 ref={Pyref}>Python</h4>
                             <h4 ref={Djref}>Django</h4>
+							<h4>Git</h4>
                             <h4>C#</h4>
                         </div>
                         <h2>{lan == "en" ? en.proandski.skills.subtitles.front : es.proandski.skills.subtitles.front}</h2>
@@ -109,7 +110,7 @@ export function Skills() {
 
                     <li ref={SkillsLiG4}>
                         <div>
-                            <h4>Spanish</h4>
+                            <h4>Español</h4>
                             <h4>English</h4>
                         </div>
                         <h2>{lan == "en" ? en.proandski.skills.subtitles.lan : es.proandski.skills.subtitles.lan}</h2>
