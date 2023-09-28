@@ -22,7 +22,7 @@ export function About() {
                 <p ref={pRef}>{parse(lan == "en" ? en.about.descrip : es.about.descrip)}</p>
                 <img ref={imgRef} src="perfil.jpg" alt="Me.jpg" />
             </div>
-            <a ref={aRef} href={ lan == "en" ? "CV's/English-CV.pdf" : "CV's/Español-CV.pdf"} target="_blank" rel="noopener noreferrer" download={"Juan_Ignacio_Bustillos_CV.pdf"}>{lan == "en" ? en.about.cvtext : es.about.cvtext}<img src="iconsSVGS/arrowICON.png" alt="" /></a>
+            <a ref={aRef} href={ lan == "en" ? "CV/English-CV.pdf" : "CV/Español-CV.pdf"} target="_blank" rel="noopener noreferrer" download={"Juan_Ignacio_Bustillos_CV.pdf"}>{lan == "en" ? en.about.cvtext : es.about.cvtext}<img src="iconsSVGS/arrowICON.png" alt="" /></a>
         </section>
     )
 }

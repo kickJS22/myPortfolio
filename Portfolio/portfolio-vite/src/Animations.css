@@ -187,4 +187,5 @@ nav>h2{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-play-state: paused;
+	animation-delay:0;
 }
