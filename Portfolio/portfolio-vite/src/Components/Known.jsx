@@ -8,18 +8,18 @@ export function Skills() {
     const {SkillsH1Ref, SkillsLiG1, SkillsLiG2, SkillsLiG3, SkillsLiG4, SkillsLiG5} = useContext(LanThContext)
     useEffect(() => {
         ObserverFunctionallity(SkillsH1Ref);
-        ObserverFunctionallity(SkillsLiG1, "1s");
-        ObserverFunctionallity(SkillsLiG2, "1.3s");
-        ObserverFunctionallity(SkillsLiG3, "1.5s");
-        ObserverFunctionallity(SkillsLiG4, "1.7")
-        ObserverFunctionallity(SkillsLiG5, "2.1s");
+        ObserverFunctionallity(SkillsLiG1);
+        ObserverFunctionallity(SkillsLiG2);
+        ObserverFunctionallity(SkillsLiG3);
+        ObserverFunctionallity(SkillsLiG4);
+        ObserverFunctionallity(SkillsLiG5);
     }, [])
     
     const {JSref, Reref, Viref, Eleref, Htref, Csref, Saref, Pyref, Djref, SQref} = useContext(LanThContext);
 
-    const proj1 = [JSref,Htref,Csref,Saref,Pyref,Djref,SQref]
+    const proj1 = [JSref,Htref,Csref,Saref,Pyref,Djref,SQref];
     const proj2=[Reref,JSref,Viref,Htref,Csref,Saref];
-    const proj3= [JSref,Htref,Csref,Eleref]
+    const proj3= [JSref,Htref,Csref,Eleref];
 
     return (
         <article id="proAndSkiCont" >

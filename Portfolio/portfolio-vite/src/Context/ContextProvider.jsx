@@ -27,7 +27,7 @@ export function LanThContextProvider(props) {
     const SQref = useRef();
 
     const [lan, setLan] = useState("en");
-    const [theme, setTheme] = useState("white");
+    
     function getAndChangeLan(){
         if(lan == "en"){
             setLan("es");
@@ -40,14 +40,20 @@ export function LanThContextProvider(props) {
             switchLanRef.current.style.animationFillMode = "backwards"
             switchLanRef.current.style.backgroundSize = "cover"
         }
-
+        
     }
+    
+    const [theme, setTheme] = useState("white");
 
+    function changeTheme(){
+        theme == "white" ? setTheme("black") : setTheme("white");
+        console.log(theme)
+    }
     
 
     return (
         <LanThContext.Provider value={{
-                lan, theme, setTheme, en, es, SkillsH1Ref, SkillsLiG1, SkillsLiG2, 
+                lan, changeTheme, en, es, SkillsH1Ref, SkillsLiG1, SkillsLiG2, 
                 SkillsLiG3, SkillsLiG4, SkillsLiG5, JSref, Reref, Viref, Eleref, Htref,
                 Csref, Saref, Pyref, Djref, SQref, getAndChangeLan, switchLanRef
             }}>

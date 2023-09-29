@@ -1,39 +1,43 @@
 @keyframes tracking-in-expand {
-    0%{
+    0% {
         letter-spacing: -0.5em;
         opacity: 0;
     }
-    40%{
+
+    40% {
 
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
 @keyframes fromAbove {
-    0%{
+    0% {
         transform: translateY(-10vh);
         opacity: 0;
     }
-    60%{
+
+    60% {
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
-    
+
 }
 
-nav>h1{
+nav>h1 {
     animation-name: fromAbove;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
 }
 
-nav>h2{
+nav>h2 {
     animation-name: tracking-in-expand;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -44,16 +48,17 @@ nav>h2{
 }
 
 @keyframes changeFlag {
-    0%{
+    0% {
         background-image: url("Flags/Usa.png");
     }
-    100%{
+
+    100% {
         background-image: url("Flags/Argentina.png");
     }
-    
+
 }
 
-#stickyHeading>ul>li>span{
+#stickyHeading>ul>li>span {
     animation-name: changeFlag;
     animation-duration: 0.1s;
     animation-fill-mode: forwards;
@@ -61,40 +66,40 @@ nav>h2{
 }
 
 #bus:hover {
-     color: #CFA108;
+    color: #CFA108;
 }
 
-#contact>a>img:hover{
+#contact>a>img:hover {
     outline: 0.5vw solid blueviolet;
     outline-offset: 0.4vw;
 }
 
-#about>h1{
+#about>h1 {
     animation-name: tracking-in-expand;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
-    animation-play-state:paused;
+    animation-play-state: paused;
 }
 
-#about>div>p{
+#about>div>p {
     animation-name: fromAbove;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
-    animation-play-state:paused;
+    animation-play-state: paused;
 }
 
-#about>div>img{
+#about>div>img {
     animation-name: fromAbove;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
-    animation-play-state:paused;
+    animation-play-state: paused;
 }
 
-#about>a{
+#about>a {
     animation-name: fromAbove;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
-    animation-play-state:paused;
+    animation-play-state: paused;
 }
 
 #about>a:hover {
@@ -102,7 +107,7 @@ nav>h2{
 }
 
 
-#skills>h1{
+#skills>h1 {
     animation-name: tracking-in-expand;
     animation-duration: 0.5s;
     animation-play-state: paused;
@@ -110,13 +115,13 @@ nav>h2{
 }
 
 
-#skills>ul>li>div>h4:hover{
-    
+#skills>ul>li>div>h4:hover {
+
     transform: translateY(-0.5vw);
 }
 
 
-#skills>ul>li{
+#skills>ul>li {
     animation-name: fromAbove;
     animation-duration: 0.5s;
     animation-play-state: paused;
@@ -124,68 +129,76 @@ nav>h2{
 }
 
 @keyframes arrowLoop {
-    0%{
+    0% {
         transform: translateX(0vw);
     }
-    33%{
+
+    33% {
         transform: translateX(0.5vw);
     }
-    66%{
+
+    66% {
         transform: translateX(-1.5);
     }
-    100%{
+
+    100% {
         transform: translateX(0vw);
     }
 }
 
-#about>a>img{
+#about>a>img {
     animation-name: arrowLoop;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 @keyframes changeBack {
-    0%{
+    0% {
         color: white;
         transform: translateY(0vw);
     }
-    100%{
+
+    100% {
         transform: translateY(-0.5vw);
         background: #CFA108;
         background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
-    
+
 }
 
 @keyframes changeBackSecond {
-    0%{
+    0% {
         transform: translateY(-0.5vw);
         background: #CFA108;
         background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
-    100%{
+
+    100% {
         color: white;
         transform: translateY(0vw);
     }
-    
+
 }
 
-#projects>div>footer>a:hover{                    transform: translateY(-0.3vw);
-}
-
-#projects>div>footer>a:hover img{
+#projects>div>footer>a:hover {
     transform: translateY(-0.3vw);
 }
 
-#skills>ul>li>div>h4{
+#projects>div>footer>a:hover img {
+    transform: translateY(-0.3vw);
+}
+
+#skills>ul>li>div>h4 {
     animation-name: changeBack;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-play-state: paused;
-	animation-delay:0;
+    animation-delay: 0;
+    transition: 0.3s;
+}
+
+#skills>ul>li>div>h4:hover {
+    background: #CFA108;
+    background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
 }

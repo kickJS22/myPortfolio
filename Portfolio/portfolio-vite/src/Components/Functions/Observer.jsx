@@ -1,10 +1,9 @@
-export function ObserverFunctionallity (Ref,delay) {
-    const observer = new IntersectionObserver((elementosDelObserver)=>{
+export function ObserverFunctionallity(Ref) {
+    const observer = new IntersectionObserver((elementosDelObserver) => {
         // Agarro el primer elemento
         const elementosQueNecesito = elementosDelObserver[0]
-        if(elementosQueNecesito.isIntersecting == true){
-            delay ? Ref.current.style.animationDuration = delay : delay = undefined; 
-            
+
+        if (elementosQueNecesito.isIntersecting == true) {
             Ref.current.style.animationPlayState = "running"
         }
     })

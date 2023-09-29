@@ -44,6 +44,13 @@ body {
     margin: 0;
     backdrop-filter: blur(10px);
 }
+#stickyHeading>ul>li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
 
 #stickyHeading>ul>li>a{
     text-decoration: none;
@@ -57,11 +64,6 @@ body {
     
 }
 
-#stickyHeading>ul>li{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
 
 #stickyHeading>ul>li>img{
     object-fit:fill;
@@ -142,7 +144,7 @@ nav>h2 {
     height: auto;
     position: absolute;
     z-index: 0;
-
+    filter: hue-rotate(270deg);
 }
 
 #circle1 {
@@ -426,12 +428,10 @@ nav>h2 {
     transition: 0.5s;
     font-size: 0.7vw;
     border-radius:0.8vw;
-    border: 0.150vw solid black;
     color: white;
     text-align: center;
     padding: 0.4vw;
-    background-color: rgb(173, 163, 163);
-    /* flex-basis: 4vw; */
+    background-color: rgb(99, 95, 95);
     margin: 0.2vw;
 }
 

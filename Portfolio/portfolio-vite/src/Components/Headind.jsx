@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { LanThContext } from "../Context/ContextProvider";
 
 export function Nav() {
-    const { en, es, getAndChangeLan, lan, switchLanRef} = useContext(LanThContext)
+    const { en, es, getAndChangeLan, lan, switchLanRef, changeTheme} = useContext(LanThContext)
     
     return (
         <>
@@ -17,6 +17,9 @@ export function Nav() {
                         <span ref={switchLanRef}>
                             <input onChange={()=>{getAndChangeLan()}} type="checkbox" name="" id="" />                    
                         </span>
+                    </li>
+                    <li>
+                        <button onClick={()=>{changeTheme()}}>tema</button>
                     </li>
                 </ul>
             </nav>
