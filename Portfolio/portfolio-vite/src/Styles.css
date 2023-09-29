@@ -10,15 +10,28 @@
 
 html{
     scroll-behavior: smooth;
-}
-
-body {
-    padding: 0px;
-    margin: 0px;
-    background-color: white;
     overflow-x: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: none;
+}
+main[data-theme="white"]{
+    --bg-color: white;
+    --text-color: black;
+}
+main[data-theme="black"]{
+    --bg-color: black;
+    --text-color: #dbdbdb;  
+}
+main {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
     scroll-snap-type: y proximity;
 }
+
 
 #mainText{
     margin-bottom: 20vw;
@@ -37,62 +50,62 @@ body {
 #stickyHeading>ul{
     display: flex;
     width: 100%;
-    height: 2%;
+    margin: 0;
     align-items: center;
     justify-content: flex-start;
-    padding: 0;
-    margin: 0;
+    padding: 0.5vw;
     backdrop-filter: blur(10px);
 }
 #stickyHeading>ul>li{
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: row;
 }
 
 #stickyHeading>ul>li>a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: 700;
     font-size: 0.8vw;
     border-radius: 2vw;
     font-family: "Montserrat";
     padding: 0.4vw;
-    margin: 0.2vw;
     
 }
 
-
-#stickyHeading>ul>li>img{
-    object-fit:fill;
-    width: 2vw;
-    height: auto;
-}
-#stickyHeading>ul>li>span{
+#stickyHeading>ul>li>#lang{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 1vw;
-    border: 0.2vw solid black;
+    margin-left: 1vw;
     width: 2.5vw;
+    border: 0.15vw solid black;
     height: 0.7vw;
     border-radius: 1vw;
     background-size:cover;
-    transition: 1s;
-    background-image: url("Flags/Usa.png");
+    background-image: url("Flags/Argentina.png");
+    transition: 0.1s;
 }
 
-#stickyHeading>ul>li>span>input{
-    width: 0.6vw;
-    height: 0.6vw;
-    border-radius: 50%;
-    appearance:none;
+#stickyHeading>ul>li>#theme{
+    margin-left: 1vw;
+    display: flex;
+    width: 2.5vw;
+    border: 0.15vw solid black;
+    height: 0.7vw;
+    border-radius: 1vw;
     background-color: black;
-    display: hidden;
-    transition: 0.5s;
-    transform: translateX(0vw);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("iconsSVGS/moon.png");
+    transition: 0.1s;
+}
+
+#stickyHeading>ul>li>span>button{
+    height: inherit;
+    width: inherit;
+    border: none;
+    background-color: transparent;
 }
 
 nav {
@@ -106,7 +119,7 @@ nav>h1 {
     font-size: 4vw;
     font-family: "Montserrat";
     font-weight: 900;
-    color: black;
+    color: var(--text-color);
     z-index: 100;
     cursor: default;
     padding: 0px;
@@ -117,7 +130,7 @@ nav>h2 {
     font-size: 2vw;
     font-family: "Montserrat Italic";
     font-weight: 700;
-    color: black;
+    color: var(--text-color);
     z-index: 100;
     cursor: default;
 }
@@ -130,17 +143,17 @@ nav>h2 {
     -webkit-text-fill-color: transparent;
     z-index: 100;
     transition: 0.5s;
-    color: black;
+    color: var(--text-color);
 }
 
 
 
 #circleContainer {
-    position: static;
+    
+    overflow-x: hidden;
 }
 
 #circleContainer>img {
-    width: 40vw;
     height: auto;
     position: absolute;
     z-index: 0;
@@ -148,20 +161,21 @@ nav>h2 {
 }
 
 #circle1 {
-
-    right: -15vw;
-    top: -40vh;
+    width: 90dvw;
+    top: -34dvw;
+    left: -40dvw;
 }
 
 #circle2 {
-    top: 5vh;
-    left: -17vw;
+    width: 70dvw;
+    top: -40dvw;
+    right: -40dvw;
 }
 
 #circle3 {
-
-    right: -14vw;
-    top: 40vh;
+    width: 55dvw;
+    top: 20dvw;
+    right: -30dvw;
 }
 
 #contact{
@@ -213,6 +227,7 @@ nav>h2 {
     margin: 0;
     margin-bottom: 7vw;
     z-index: 1000;
+    color: var(--text-color);
 }
 
 
@@ -228,7 +243,6 @@ nav>h2 {
     border-radius: 2vw;
     height: 22vw;
     width: auto;
-
 }
 
 #about>div>p {
@@ -238,7 +252,7 @@ nav>h2 {
     font-size: 1.4vw;
     justify-self: flex-start;
     align-self: flex-start;
-    
+    color: var(--text-color);
 }
 
 #about>a {
@@ -250,7 +264,6 @@ nav>h2 {
     font-size: 1.4vw;
     font-weight: 900;
     border: none;
-    background-color: grey;
     width: 15vw;
     height: auto;
     align-self: center;
@@ -291,6 +304,7 @@ nav>h2 {
     font-family: "Montserrat";
     font-size: 3vw;
     font-weight: 900;
+    color: var(--text-color);
 }
 
 #projects>div{
@@ -306,6 +320,7 @@ nav>h2 {
 #projects>div>h2{
     font-family: "Montserrat Italic";
     font-size: 1.5vw;
+    color: var(--text-color);
 }
 
 #projects>div>span{
@@ -319,6 +334,7 @@ nav>h2 {
     padding-right: 2vw;
     font-family: "Montserrat";
     line-height: 1.6vw;
+    color: var(--text-color);
 }
 
 #projects>div>span>p>a{
@@ -379,6 +395,7 @@ nav>h2 {
     font-family: "Montserrat";
     font-size: 3vw;
     font-weight: 900;
+    color: var(--text-color);
 }
 
 #skills>ul {
@@ -413,7 +430,7 @@ nav>h2 {
     padding: 0.3vw;
     border: 0.2vw solid #CFA108;
     border-radius: 0.5vw;
-
+    color: var(--text-color);
 }
 
 #skills>ul>li>div {

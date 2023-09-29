@@ -32,13 +32,17 @@
     }
 
 
-    #stickyHeading>ul>li>span {
-        width: 7vw;
-        height: 2vw;
-
+    #stickyHeading>ul>li>#lang{
+        width: 5vw;
+        height: 1.8vw;
     }
 
-    #stickyHeading>ul>li>span>input {
+    #stickyHeading>ul>li>#theme{
+        width: 5vw;
+        height: 1.8vw;
+    }
+
+    #stickyHeading>ul>li>span>button {
         width: 1.8vw;
         height: 1.8vw;
     }
@@ -177,7 +181,7 @@
         border-radius: 3vw;
         max-width: 90vw;
         width: 80%;
-        height: 50vw;
+        height: inherit;
         font-family: "Montserrat";
     }
 

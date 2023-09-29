@@ -43,27 +43,6 @@ nav>h2 {
     animation-iteration-count: 1;
 }
 
-#stickyHeading>ul>li>span>input:checked {
-    transform: translateX(1.6vw);
-}
-
-@keyframes changeFlag {
-    0% {
-        background-image: url("Flags/Usa.png");
-    }
-
-    100% {
-        background-image: url("Flags/Argentina.png");
-    }
-
-}
-
-#stickyHeading>ul>li>span {
-    animation-name: changeFlag;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-}
 
 #bus:hover {
     color: #CFA108;
@@ -100,10 +79,11 @@ nav>h2 {
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-play-state: paused;
+    transition: 0.4s;
 }
 
 #about>a:hover {
-    transform: translateY(-3vh);
+    transform: translateY(-2vh);
 }
 
 

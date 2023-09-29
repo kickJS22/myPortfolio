@@ -7,6 +7,7 @@ export const LanThContext= createContext();
 export function LanThContextProvider(props) {
     
     const switchLanRef = useRef();
+    const switchThemeRef = useRef();
 
     const SkillsH1Ref = useRef();
     const SkillsLiG1 = useRef()
@@ -26,19 +27,15 @@ export function LanThContextProvider(props) {
     const Djref = useRef();
     const SQref = useRef();
 
-    const [lan, setLan] = useState("en");
+    const [lan, setLan] = useState(en);
     
     function getAndChangeLan(){
-        if(lan == "en"){
-            setLan("es");
-            console.log(switchLanRef.current.style)
-            switchLanRef.current.style.animationFillMode = "forwards"
-            switchLanRef.current.style.animationPlayState = "running";
-            switchLanRef.current.style.backgroundSize = "cover";
-        } else if (lan == "es"){
-            setLan("en");
-            switchLanRef.current.style.animationFillMode = "backwards"
-            switchLanRef.current.style.backgroundSize = "cover"
+        if(lan == en){
+            setLan(es);
+            switchLanRef.current.style.backgroundImage = "url(Flags/Usa.png)";
+        } else if (lan == es){
+            setLan(en);
+            switchLanRef.current.style.backgroundImage = "url(Flags/Argentina.png)";
         }
         
     }
@@ -46,16 +43,23 @@ export function LanThContextProvider(props) {
     const [theme, setTheme] = useState("white");
 
     function changeTheme(){
-        theme == "white" ? setTheme("black") : setTheme("white");
-        console.log(theme)
+        if(theme == "white"){
+            setTheme("black");
+            switchThemeRef.current.style.backgroundImage = "url(iconsSVGS/sun.png)";
+            switchThemeRef.current.style.backgroundColor = "white"
+        } else if(theme == "black"){
+            switchThemeRef.current.style.backgroundImage = "url(iconsSVGS/moon.png)";
+            switchThemeRef.current.style.backgroundColor = "black";
+            setTheme("white");
+        }
     }
     
 
     return (
         <LanThContext.Provider value={{
-                lan, changeTheme, en, es, SkillsH1Ref, SkillsLiG1, SkillsLiG2, 
+                lan, theme, changeTheme, en, es, SkillsH1Ref, SkillsLiG1, SkillsLiG2, 
                 SkillsLiG3, SkillsLiG4, SkillsLiG5, JSref, Reref, Viref, Eleref, Htref,
-                Csref, Saref, Pyref, Djref, SQref, getAndChangeLan, switchLanRef
+                Csref, Saref, Pyref, Djref, SQref, getAndChangeLan, switchLanRef, switchThemeRef
             }}>
             {props.children}
         </LanThContext.Provider>

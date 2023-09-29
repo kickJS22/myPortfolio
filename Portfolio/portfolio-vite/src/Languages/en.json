@@ -31,7 +31,7 @@
                 "front" : "Front-End",
                 "back": "Back-End",
                 "apps": "Apps",
-                "lan": "Languages", 
+                "lang": "Languages", 
                 "soft": {
                     "title":"Soft-Skills",
                     "skills":{
