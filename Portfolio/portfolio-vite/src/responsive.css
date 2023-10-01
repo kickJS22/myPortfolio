@@ -1,6 +1,8 @@
 /* 600 */
 @media (max-width: 1300px) {
-
+    html{
+	overflow-x:hidden;
+    }
     nav {
         margin-bottom: 20vw;
     }
