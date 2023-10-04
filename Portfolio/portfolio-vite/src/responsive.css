@@ -1,6 +1,8 @@
 /* 600 */
 @media (max-width: 1300px) {
-
+    html{
+	overflow-x:hidden;
+    }
     nav {
         margin-bottom: 20vw;
     }
@@ -33,18 +35,18 @@
 
 
     #stickyHeading>ul>li>#lang{
-        width: 5vw;
-        height: 1.8vw;
+        width: 8vw;
+        height: 3vw;
     }
 
     #stickyHeading>ul>li>#theme{
-        width: 5vw;
-        height: 1.8vw;
+        width: 8vw;
+        height: 3vw;
     }
 
     #stickyHeading>ul>li>span>button {
-        width: 1.8vw;
-        height: 1.8vw;
+        width: inherit;
+        height: inherit;
     }
 
 
