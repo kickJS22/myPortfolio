@@ -32,11 +32,11 @@ export function Skills() {
                             {parse(lan.proandski.projects.pro1.descrip)}
                             <label>{lan.proandski.projects.pro1.date}</label>
                         </p>
-                        <img src="" alt="Falta Foto" />
+                        <img src="ProjectsPhotos/BookList.png" alt="BookList.png" />
 
                     </span>
                     <footer>
-                        <a href="https://github.com/kickJS22/BookList" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="" /></a>
+                        <a href="https://github.com/kickJS22/BookList" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="Book List code" /></a>
                     </footer>
                 </div>
                 <div onMouseEnter={()=>{mouseOn(proj2)}} onMouseLeave={()=>{mouseOut(proj2)}}>
@@ -50,8 +50,8 @@ export function Skills() {
 
                     </span>
                     <footer>
-                        <a href="https://kickjs22.github.io/ViteCalculator/" target="_blank"><img src="iconsSVGS/icons8-enlace-externo-512.svg" alt="" /></a>
-                        <a href="https://github.com/kickJS22/ViteCalculator" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="" /></a>
+                        <a href="https://kickjs22.github.io/ViteCalculator/" target="_blank"><img src="iconsSVGS/icons8-enlace-externo-512.svg" alt="Vite calculator code" /></a>
+                        <a href="https://github.com/kickJS22/ViteCalculator" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="Vite calculator live demo" /></a>
                     </footer>
                 </div>
                 <div onMouseEnter={()=>{mouseOn(proj3)}} onMouseLeave={()=>{mouseOut(proj3)}}>
@@ -61,11 +61,11 @@ export function Skills() {
                             {parse(lan.proandski.projects.pro3.descrip)}
                             <label>{lan.proandski.projects.pro3.date}</label>
                         </p>
-                        <img src="" alt="Falta Foto" />
+                        <img src="ProjectsPhotos/CodeElectron.png" alt="CodeElectron.png" />
 
                     </span>
                     <footer>
-                        <a href="https://github.com/kickJS22/CodeNote-electron" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="" /></a>
+                        <a href="https://github.com/kickJS22/CodeNote-electron" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="Code Electron code" /></a>
                     </footer>
                 </div>
             </section>
