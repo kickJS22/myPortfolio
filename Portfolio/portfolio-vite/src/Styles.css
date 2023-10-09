@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("Fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+    src: url("Fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "Montserrat Italic";
-    src: url("Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("Fonts/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
 html,body{
