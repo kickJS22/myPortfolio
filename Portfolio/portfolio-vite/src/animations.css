@@ -132,16 +132,30 @@ nav>h2 {
     animation-iteration-count: infinite;
 }
 
+main[data-theme="white"]{
+    --bg-color: white;
+}
+
+main[data-theme="black"]{
+    --bg-color: black;
+}
+
 @keyframes changeBack {
     0% {
         color: white;
         transform: translateY(0vw);
     }
 
+    25%{
+        outline: 2px solid var(--bg-color);
+
+    }
+
     100% {
         transform: translateY(-0.5vw);
         background: #CFA108;
         background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+        outline: 2px solid var(--bg-color);
     }
 
 }
