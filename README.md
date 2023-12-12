@@ -1,3 +1,3 @@
 # myPortfolio
-Page published on: https://bustillos.surge.sh/
+Page published on: https://kickjs22.github.io/myPortfolio/
 
