@@ -11,7 +11,7 @@ export function Nav() {
                     <li>
                         <a href="#about">{lan.about.title}</a>
                         <a href="#proAndSkiCont">{lan.proandski.projects.title}</a>
-                        <a href="#contact">{lan.contact.title}</a>
+                        <a href="#head">{lan.contact.title}</a>
                     </li>
                     <li>
                         <span id="lang" ref={switchLanRef}>
@@ -26,7 +26,7 @@ export function Nav() {
                 </ul>
             </nav>
             <nav id="mainText">
-                <h1>JUAN IGNACIO <span id="bus">BUSTILLOS</span></h1>
+                <h1 id="head">JUAN IGNACIO <span id="bus">BUSTILLOS</span></h1>
                 <h2>{lan.subtitle}</h2>
                 <section id="contact">
                     <a target="_blank" href="https://github.com/kickJS22"><img src="iconsSVGS/icons8-github violeta.svg" alt="Github.svg" /></a>

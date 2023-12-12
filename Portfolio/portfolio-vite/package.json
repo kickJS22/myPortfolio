@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -28,7 +28,7 @@
     "gh-pages": "^6.0.0",
     "standard": "^17.1.0",
     "surge": "^0.23.1",
-    "vite": "^4.4.5"
+    "vite": "^4.5.1"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"

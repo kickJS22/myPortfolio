@@ -31,21 +31,14 @@
                 "front" : "Front-End",
                 "back": "Back-End",
                 "apps": "Apps",
-                "lang": "Lenguajes", 
-                "soft": {
-                    "title":"Habilidades Blandas",
-                    "skills":{
-                        "cre": "Creatividad",
-                        "team": "Trabajo en equipo",
-                        "deci" : "Toma de decisiones",
-                        "self": "Autodidacta",
-                        "ent": "Entusiasmo"
-                    }
-                }
+                "lang": "Lenguajes"
             }
         } 
     },
     "contact":{
         "title": "CONTACTO"
+    },
+    "com": {
+        "title":"PORCENTAJE DE COMODIDAD"
     }
 }

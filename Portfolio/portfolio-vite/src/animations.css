@@ -196,3 +196,10 @@ main[data-theme="black"]{
     background: #CFA108;
     background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
 }
+
+#experinceContainer>section{
+    animation-name: fromAbove;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}

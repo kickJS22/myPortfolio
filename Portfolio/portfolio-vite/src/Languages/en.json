@@ -31,21 +31,14 @@
                 "front" : "Front-End",
                 "back": "Back-End",
                 "apps": "Apps",
-                "lang": "Languages", 
-                "soft": {
-                    "title":"Soft-Skills",
-                    "skills":{
-                        "cre": "Creativity",
-                        "team": "Team-work",
-                        "deci" : "Decision Making",
-                        "self": "Self Learning",
-                        "ent": "Enthusiasm"
-                    }
-                }
+                "lang": "Languages"
             }
         } 
     },
     "contact":{
         "title": "CONTACT"
+    },
+    "com": {
+        "title":"PERCENTAGE OF COMFORTABLY"
     }
 }

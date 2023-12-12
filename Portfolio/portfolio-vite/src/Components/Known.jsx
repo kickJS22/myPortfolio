@@ -12,7 +12,7 @@ export function Skills() {
         ObserverFunctionallity(SkillsLiG2);
         ObserverFunctionallity(SkillsLiG3);
         ObserverFunctionallity(SkillsLiG4);
-        ObserverFunctionallity(SkillsLiG5);
+        
     }, [])
     
     const {JSref, Reref, Viref, Eleref, Htref, Csref, Saref, Pyref, Djref, SQref} = useContext(LanThContext);
@@ -75,12 +75,12 @@ export function Skills() {
                 <ul>
                     <li ref={SkillsLiG1}>
                         <div>
-                            <h4 ref={Reref}>React</h4>
+                            <h4 ref={Reref}>React.js</h4>
                             <h4 ref={JSref}>JavaScript</h4>
-                            <h4 ref={Viref}>Vite</h4>
-                            <h4 ref={Eleref}>Electron</h4>
-                            <h4 ref={Htref}>Html</h4>
-                            <h4 ref={Csref}>Css</h4>
+                            <h4 ref={Viref}>Vite.js</h4>
+                            <h4 ref={Eleref}>Electron.js</h4>
+                            <h4 ref={Htref}>HTML</h4>
+                            <h4 ref={Csref}>CSS</h4>
                             <h4 ref={Saref}>Sass</h4>
                             <h4 ref={Pyref}>Python</h4>
                             <h4 ref={Djref}>Django</h4>
@@ -92,8 +92,8 @@ export function Skills() {
 
                     <li ref={SkillsLiG2}>
                         <div>
-                            <h4>Node</h4>
-                            <h4>Express</h4>
+                            <h4>Node.js</h4>
+                            <h4>Express.js</h4>
                             <h4 ref={SQref}>SQLite</h4>
                         </div>
                         <h2>{lan.proandski.skills.subtitles.back}</h2>
@@ -116,16 +116,6 @@ export function Skills() {
                         <h2>{lan.proandski.skills.subtitles.lang}</h2>
                     </li>
 
-                    <li ref={SkillsLiG5}>
-                        <div>
-                            <h4>{lan.proandski.skills.subtitles.soft.skills.cre}</h4>
-                            <h4>{lan.proandski.skills.subtitles.soft.skills.team}</h4>
-                            <h4>{lan.proandski.skills.subtitles.soft.skills.deci}</h4>
-                            <h4>{lan.proandski.skills.subtitles.soft.skills.self}</h4>
-                            <h4>{lan.proandski.skills.subtitles.soft.skills.ent}</h4>
-                        </div>
-                        <h2>{lan.proandski.skills.subtitles.soft.title}</h2>
-                    </li>
                 </ul>
             </section>
         </article>
