@@ -119,6 +119,10 @@
         font-size: 8vw;
     }
 
+    #projects>div{
+        box-shadow:0px 0px 7px 2px rgba(207,161,8, 0.2);
+    }
+
     #projects>div>h2 {
         font-size: 5vw;
     }
@@ -180,7 +184,6 @@
     #skills>ul>li {
         margin: 10vw;
         padding: 3vw;
-        border: 0.6vw solid #C270CF;
         border-radius: 3vw;
         max-width: 90vw;
         width: 80%;
@@ -191,7 +194,6 @@
     #skills>ul>li>h2 {
         font-size: 3vw;
         padding: 2vw;
-        border: 0.8vw solid #CFA108;
         border-radius: 1vw;
 
     }
@@ -204,8 +206,19 @@
         margin: 1vw;
     }
 
+    #experinceContainer>section {
+        
+        height: 20dvw;
+        width: 20dvw;
+        
+    }
+
+    #experinceContainer>section>h3{
+        font-size: 4dvw;
+    }
+
     #experinceContainer>section>h2{
-        font-size: 1.6dvw;
+        font-size: 3.2dvw;
         transform: translateY(0);
     }
     

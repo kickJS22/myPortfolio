@@ -1,4 +1,4 @@
-import "./Styles.css"
+import "./styles.css"
 import "./animations.css"
 import "./responsive.css"
 import { Nav } from './Components/Headind'
