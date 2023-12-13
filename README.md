@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-# myPortfolio
-Page published on: https://bustillos.surge.sh/
+<h1>myPortfolio</h1>
 
-=======
-# myPortfolio
-Page published on: https://kickjs22.github.io/myPortfolio/
+> [!IMPORTANT]  
+> Page published on: https://kickjs22.github.io/myPortfolio/
 
->>>>>>> refs/remotes/origin/main
