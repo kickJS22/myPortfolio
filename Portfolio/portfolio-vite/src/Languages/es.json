@@ -3,7 +3,7 @@
     "about":{
         "title":"SOBRE MÍ",
         "subtitle": "HOLA SOY JUAN 🖐️,",
-        "descrip": "Soy un desarrollador de software junior orientado al desarrollo de aplicaciones web, también muy interesado en el diseño gráfico. <br/>Cómodo utilizando JavaScript y Python, con un conocimiento básico de Node. <br/>Mi objetivo profesional es aprender lo máximo que pueda de mis primeras experiencias",
+        "descrip": "Soy un desarrollador de software junior orientado al desarrollo de aplicaciones web, también muy interesado en el diseño gráfico. <br/>Cómodo utilizando JavaScript y Python, con un conocimiento básico de Node. <br/>Mi objetivo profesional es aprender lo máximo que pueda de mis primeras experiencias.",
         "cvtext":"DESCARGAR CV"
     },
     "proandski":{
@@ -40,5 +40,14 @@
     },
     "com": {
         "title":"PORCENTAJE DE COMODIDAD"
+    },
+    "exp":{
+        "title": "COMODIDAD"
+    },
+    "email": {
+        "name": "Nombre:",
+        "mes": "Mensaje:",
+        "title":"ENVÍAME UN MAIL",
+        "send": "ENVIAR"
     }
 }

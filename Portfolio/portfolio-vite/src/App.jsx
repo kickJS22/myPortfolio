@@ -7,6 +7,7 @@ import { Skills } from './Components/Known'
 import { useContext } from "react";
 import { LanThContext } from "./Context/ContextProvider";
 import { Experience } from "./Components/Experience"
+import { Contact } from "./Components/Email"
 
 function App() {
   const { theme } = useContext(LanThContext)
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Skills />
         <Experience/>
+        <Contact />
       </div>
     </main>
   )

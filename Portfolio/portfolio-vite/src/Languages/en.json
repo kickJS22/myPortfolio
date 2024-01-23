@@ -39,6 +39,15 @@
         "title": "CONTACT"
     },
     "com": {
-        "title":"PERCENTAGE OF COMFORTABLY"
+        "title":"PERCENTAGE OF COMFORT"
+    },
+    "exp":{
+        "title": "COMFORT"
+    },
+    "email": {
+        "name": "Name:",
+        "mes": "Message:",
+        "title":"SEND ME AN EMAIL",
+        "send": "SEND"
     }
 }

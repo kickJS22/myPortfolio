@@ -121,8 +121,11 @@
 
     #projects>div{
         box-shadow:0px 0px 7px 2px rgba(207,161,8, 0.2);
+        border-radius: 5vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
     }
-
+    
     #projects>div>h2 {
         font-size: 5vw;
     }
@@ -139,16 +142,17 @@
         width: 30vw;
         height: 18vw;
     }
-
-
+    
+    
     #projects>div>footer>a {
         height: 6vw;
         width: 6vw;
         margin-right: 1vw;
     }
-
-
+    
+    
     #projects>div>footer>a>img {
+        border-radius: 1vw;
         height: 6vw;
         width: 6vw;
     }
@@ -163,7 +167,7 @@
 
     #skills {
         width: 90vw;
-        z-index: 9;
+
     }
     
     #skills>h1 {
@@ -222,5 +226,29 @@
         transform: translateY(0);
     }
     
+    
+#mailContact>form>section>label{
+    font-size: 3dvw;
+    width: 15dvw;
+}
+
+#mailContact>form>section>input{
+    font-size: 1dvw;
+    width: 30dvw;
+    height: 4dvw;
+}
+
+#mailContact>form>section>textarea{
+    font-size: 1dvw;
+    width: 30dvw;
+    height: 12dvw;
+}
+
+#sendEmail{
+    font-size: 2dvw;
+    width: 22dvw;
+    height: 4dvw;
+}
+
 
 }
