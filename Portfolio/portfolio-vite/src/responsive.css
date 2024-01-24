@@ -1,5 +1,5 @@
 /* 600 */
-@media (max-width: 1300px) {
+@media (max-width: 500px) {
     html{
 	overflow-x:hidden;
     }
@@ -111,8 +111,15 @@
         justify-content: center;
     }
 
+    #projectsText{
+        font-size: 8vw;
+    }
+
     #projects {
-        width: 90vw;
+        width: 96vw;
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
     }
 
     #projects>h1 {
@@ -166,8 +173,9 @@
     }
 
     #skills {
-        width: 90vw;
-
+        width: 100vw;
+        height: 80dvw;
+        margin: 10dvw;
     }
     
     #skills>h1 {
@@ -176,23 +184,23 @@
     
     
     #skills>ul {
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-basis: 100%;
-        width: 70vw;
-        display: flex;
-        flex-direction: column;
+       width: 100dvw;
+       display: flex;
+       overflow-y: hidden;
+       gap:10dvw;
+       flex-basis: 100%;
+       flex-wrap: nowrap;
+       align-items: center;
+       justify-content: flex-start;
     }
 
     #skills>ul>li {
-        margin: 10vw;
-        padding: 3vw;
-        border-radius: 3vw;
-        max-width: 90vw;
-        width: 80%;
-        height: inherit;
-        font-family: "Montserrat";
+        height: 50dvw;
+        max-width: 70dvw;
+        aspect-ratio: 1/1;
+        flex-basis: 70%;
+        border-radius: 3dvw;
+
     }
 
     #skills>ul>li>h2 {

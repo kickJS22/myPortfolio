@@ -23,8 +23,9 @@ export function Skills() {
 
     return (
         <article id="proAndSkiCont" >
-            <section id="projects">
-                <h1>{lan.proandski.projects.title}</h1>
+            <section id="projectsCont">
+                <h1 id="projectsText">{lan.proandski.projects.title}</h1>
+                <ul id="projects">
                 <div onMouseEnter={()=>{mouseOn(proj1)}} onMouseLeave={()=>{mouseOut(proj1)}} >
                     <h2>{lan.proandski.projects.pro1.title}</h2>
                     <span>
@@ -68,6 +69,7 @@ export function Skills() {
                         <a href="https://github.com/kickJS22/CodeNote-electron" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="Code Electron code" /></a>
                     </footer>
                 </div>
+                </ul>
             </section>
 
             <section id="skills">
