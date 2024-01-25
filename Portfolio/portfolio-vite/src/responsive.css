@@ -252,13 +252,14 @@
         margin: 0;
         padding: 0;
     }
-
+    
     #experience>h1{
         font-size: 8dvw;
         text-align: center;
     }
-
+    
     #experinceContainer{
+        height: 40dvw;
         margin: 0;
         width: 98%;
         display: flex;
