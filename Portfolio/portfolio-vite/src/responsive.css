@@ -105,6 +105,20 @@
         height: 2vw;
     }
 
+    #cert>h1{
+        font-size: 5dvw;
+        
+    }
+
+    #certCont{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        height: 40dvw;
+        justify-content: flex-start;
+    }
+
     #proAndSkiCont {
         flex-direction: column;
         align-items: center;
@@ -218,11 +232,36 @@
         margin: 1vw;
     }
 
+    #experience{
+        width: 100dvw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #experience>h1{
+        font-size: 8dvw;
+        text-align: center;
+    }
+
+    #experinceContainer{
+        margin: 0;
+        width: 98%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        gap: 7dvw;
+        justify-content: flex-start;
+    }
+
     #experinceContainer>section {
         
         height: 20dvw;
         width: 20dvw;
-        
+        aspect-ratio: 1/1;
     }
 
     #experinceContainer>section>h3{
@@ -235,27 +274,38 @@
     }
     
     
+#mailContact{
+    margin-top: 10dvw;
+}
+
+#mailContact>h1{
+    font-size: 8dvw;
+    margin-bottom: 10dvw;
+}
+
 #mailContact>form>section>label{
-    font-size: 3dvw;
-    width: 15dvw;
+    font-size: 5dvw;
+    width: 24dvw;
 }
 
 #mailContact>form>section>input{
-    font-size: 1dvw;
-    width: 30dvw;
-    height: 4dvw;
+    font-size: 5dvw;
+    width: 50dvw;
+    height: 8dvw;
 }
 
 #mailContact>form>section>textarea{
-    font-size: 1dvw;
-    width: 30dvw;
-    height: 12dvw;
+    font-size: 5dvw;
+    width: 50dvw;
+    height: 20dvw;
 }
 
 #sendEmail{
-    font-size: 2dvw;
-    width: 22dvw;
-    height: 4dvw;
+    margin-top: 10dvw;
+    font-size: 5dvw;
+    width: 60dvw;
+    border-radius: 20dvw;
+    height: 8dvw;
 }
 
 

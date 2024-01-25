@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { LanThContext } from "./Context/ContextProvider";
 import { Experience } from "./Components/Experience"
 import { Contact } from "./Components/Email"
+import { Cert } from "./Components/Certifications"
 
 function App() {
   const { theme } = useContext(LanThContext)
@@ -16,6 +17,7 @@ function App() {
       <Nav />
       <div id='PortInfo'>
         <About />
+        <Cert />
         <Skills />
         <Experience/>
         <Contact />

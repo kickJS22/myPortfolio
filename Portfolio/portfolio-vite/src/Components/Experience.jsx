@@ -23,7 +23,7 @@ export function Experience() {
     },[])
 
     return(
-        <div id="experience">
+        <ul id="experience">
             <h1>{lan.com.title}</h1>
             <article id="experinceContainer">
                 <section ref={Rref}>
@@ -62,6 +62,6 @@ export function Experience() {
             </section>
 
             </article>
-        </div>
+        </ul>
     )
 }
