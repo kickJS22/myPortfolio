@@ -86,6 +86,13 @@ nav>h2 {
     transform: translateY(-2vh);
 }
 
+.certEle{
+    transition: 0.3s;
+}
+
+.certEle:hover{
+    transform: scale(1.05);
+}
 
 #skills>h1 {
     animation-name: tracking-in-expand;

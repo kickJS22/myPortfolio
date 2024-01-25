@@ -17,7 +17,6 @@ html,body{
     margin: 0;
 }
 
-
 main[data-theme="white"]{
     --box-shadow-blue: 0px 0px 10px 1px rgba(158, 156, 253,0.35);
     --bg-color: white;
@@ -70,7 +69,7 @@ main {
     top: 0;
     position: sticky;
     width: 100%;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 #stickyHeading>ul{
@@ -87,13 +86,14 @@ main {
     display: flex;
     align-items: center;
     flex-direction: row;
+    gap: 2dvw;
 }
 
 #stickyHeading>ul>li>a{
     text-decoration: none;
     color: var(--text-color);
-    font-weight: 700;
-    font-size: 0.8vw;
+    font-weight: 750;
+    font-size: 1.2vw;
     border-radius: 2vw;
     font-family: "Montserrat";
     padding: 0.4vw;
@@ -102,10 +102,10 @@ main {
 
 #stickyHeading>ul>li>#lang{
     display: flex;
-    margin-left: 1vw;
-    width: 2.5vw;
+    margin-left: 1.6vw;
+    width: 3vw;
     border: 0.15vw solid black;
-    height: 0.7vw;
+    height: 1vw;
     border-radius: 1vw;
     background-size:cover;
     background-position:top;
@@ -116,9 +116,9 @@ main {
 #stickyHeading>ul>li>#theme{
     margin-left: 1vw;
     display: flex;
-    width: 2.5vw;
+    width: 3vw;
     border: 0.15vw solid black;
-    height: 0.7vw;
+    height: 1vw;
     border-radius: 1vw;
     background-color: black;
     background-size:contain;
@@ -147,7 +147,6 @@ nav>h1 {
     font-family: "Montserrat";
     font-weight: 900;
     color: var(--text-color);
-    z-index: 100;
     cursor: default;
     padding: 0px;
     margin-top: 15vw;
@@ -158,7 +157,6 @@ nav>h2 {
     font-family: "Montserrat Italic";
     font-weight: 700;
     color: var(--text-color);
-    z-index: 100;
     cursor: default;
 }
 
@@ -168,7 +166,6 @@ nav>h2 {
     background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    z-index: 100;
     transition: 0.5s;
     color: var(--text-color);
 }
@@ -180,7 +177,6 @@ nav>h2 {
     align-items: center;
     scroll-snap-align: center;
     margin-top: 3vw;
-    z-index: 1000;
 }
 
 #contact>a{
@@ -207,7 +203,7 @@ nav>h2 {
     scroll-margin-top: 50px;
     width: 80vw;
     height: auto;
-    margin-bottom: 20vw;
+    margin-bottom: 10vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -219,7 +215,6 @@ nav>h2 {
     font-weight: 900;
     margin: 0;
     margin-bottom: 4vw;
-    z-index: 9;
     color: var(--text-color);
 }
 
@@ -279,6 +274,7 @@ nav>h2 {
 #cert{
     font-family: "Montserrat";
     color: var(--text-color);
+    margin-bottom: 10dvw;
 }
 
 #cert>h1{
@@ -296,16 +292,21 @@ nav>h2 {
     gap: 10dvw;
 }
 
+#certCont>a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 .certEle{
     padding: 2dvw;
-    font-size: 1dvw;
+    font-size: 0.7dvw;
     display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 2vw;
     box-shadow:0px 0px 17px  rgba(8, 144, 207, 0.2);
-    width: 25dvw;
-    height: 25dvw;
+    width: 13dvw;
+    height: 13dvw;
     flex-basis: 30%;
     aspect-ratio: 1/1;
     justify-content: center;
@@ -314,8 +315,8 @@ nav>h2 {
 }
 
 .certEle>img{
-    height: 12dvw;
-    width: 12dvw;
+    height: 50%;
+    width: 50%;
     object-fit: contain;
 }
 
@@ -335,7 +336,6 @@ nav>h2 {
 }
 
 #projectsText{
-    z-index: 1000;
     text-align: center;
     margin: 0;
     margin-top: 4vw;
@@ -394,6 +394,8 @@ nav>h2 {
     border-radius: 1vw;
     width: 20vw;
     height: 10vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 #projects>div>footer{
@@ -417,8 +419,8 @@ nav>h2 {
 }
 
 #skills {
+    z-index: 1001;
     margin-top: 4.5vw;
-    z-index: 10001;
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -506,17 +508,19 @@ nav>h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 4dvw;
 }
 
 
 #experinceContainer>section {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     font-family: "Montserrat";
     padding: 3dvw;
-    height: 10dvw;
-    width: 10dvw;
-    margin: 4dvw;
+    height: 7dvw;
+    width: 7dvw;
     border-radius: 100%;
     background-color: var(--circle-color);
     box-shadow: 0px 0px 17px 3px rgba(207,161,8,0.2),0px 0px 17px 3px rgba(158, 156, 253, 0.2);
@@ -529,6 +533,7 @@ nav>h2 {
 
 #experinceContainer>section>h3{
     font-size: 2dvw;
+    margin: 0;
     background: #CFA108;
     background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
     -webkit-background-clip: text;
@@ -537,8 +542,8 @@ nav>h2 {
 }
 
 #experinceContainer>section>h2{
-    font-size: 2dvw;
-    transform: translateY(-29px);
+    margin: 0;
+    font-size: 1.4dvw;
 }
 
 #mailContact{
@@ -551,7 +556,6 @@ nav>h2 {
     font-size: 3vw;
     font-weight: 900;
     margin-bottom: 4vw;
-    z-index: 1000;
     color: var(--text-color);
     text-align: center;
 }

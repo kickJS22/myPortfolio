@@ -1,10 +1,22 @@
 {
-    "subtitle":"DESARROLLADOR FRONT-END ANALISTA EN CIBERSEGURIDAD",
+    "subtitle":"ANALISTA EN CIBERSEGURIDAD Y DESARROLLADOR FULLSTACK",
     "about":{
         "title":"SOBRE MÍ",
         "subtitle": "HOLA SOY JUAN 🖐️,",
-        "descrip": "Soy un desarrollador de software junior orientado al desarrollo de aplicaciones web, también muy interesado en el diseño gráfico. <br/>Cómodo utilizando JavaScript y Python, con un conocimiento básico de Node. <br/>Mi objetivo profesional es aprender lo máximo que pueda de mis primeras experiencias.",
+        "descrip": "Soy un analista en ciberseguridad junior y desarrollador de software orientado a aplicaciones fullstack. <br/>Cómodo utilizando JavaScript y Python, y con NodeJS en el backend. <br/>Mi objetivo profesional es aprender lo máximo que pueda de mis primeras experiencias.",
         "cvtext":"DESCARGAR CV"
+    },
+    "cert":{
+        "title": "CERTIFICACIONES",
+        "subtitle": "CERTIFICACIONES Y CURSOS",
+        "certArray" : {
+            "cisco" : "Analista en Ciberseguridad Junior",
+            "first" : "B2 FIRST Cambridge Certificado",
+            "solo" : "SoloLearn JavaScript Certificado",
+            "harv" : "CS50's Web Development Curso",
+            "node": "Curso Midudev NodeJS ",
+            "react" : "Curso Fazt ReactJS"
+        }
     },
     "proandski":{
         "projects":{

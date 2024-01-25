@@ -30,7 +30,7 @@
     "gh-pages": "^6.0.0",
     "standard": "^17.1.0",
     "surge": "^0.23.1",
-    "vite": "^4.5.1"
+    "vite": "^4.5.2"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"

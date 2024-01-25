@@ -105,18 +105,30 @@
         height: 2vw;
     }
 
-    #cert>h1{
-        font-size: 5dvw;
-        
+    #cert{
+        width: 100dvw;
     }
 
+    #cert>h1{
+        font-size: 5dvw;
+        color: black;
+    }
+    
     #certCont{
-        width: 100%;
+        padding: 3dvw;
+        margin: 0;
+        width: 95dvw;
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-y: hidden;
         height: 40dvw;
         justify-content: flex-start;
+    }
+
+    .certEle{
+        font-size: 1.4dvw;
+        width: 28dvw;
+        height: 28dvw;
     }
 
     #proAndSkiCont {

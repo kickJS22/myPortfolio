@@ -1,10 +1,22 @@
 {
-    "subtitle":"FRONT-END DEVELOPER AND CYBERSECURITY ANALYST",
+    "subtitle":"CIBERSECURITY ANALYST AND FULLSTACK DEVELOPER",
     "about":{
         "title":"ABOUT",
         "subtitle": "HI I'M JUAN 🖐️,",
-        "descrip": "A junior software developer oriented to create web applications, also highly interested in graphic design. <br/>Comfortable in the utilization of JavaScript and Python, and a basic understanding of backend with Node. <br/>My professional objective is learning the maximum that i can of my first experiences.",
+        "descrip": "I'm a junior cybersecurity analyst and a software developer oriented to fullstack web applications. <br/>Comfortable in the utilization of JavaScript and Python, and with NodeJS in the backend. <br/>My professional objective is learning the maximum that i can of my first experiences.",
         "cvtext":"DOWNLOAD CV"
+    },
+    "cert":{
+        "title": "CERTIFICATIONS",
+        "subtitle": "CERTIFICATIONS AND COURSES",
+        "certArray" : {
+            "cisco" : "Junior Cybersecurity Analyst",
+            "first" : "B2 FIRST Cambridge Certification",
+            "solo" : "SoloLearn JavaScript Certification",
+            "harv" : "CS50's Web Development Course",
+            "node": "Midudev's NodeJS Course",
+            "react" : "Fazt's ReactJS Course"
+        }
     },
     "proandski":{
         "projects":{
@@ -36,7 +48,7 @@
         } 
     },
     "contact":{
-        "title": "CONTACT"
+        "title": "SOCIAL"
     },
     "com": {
         "title":"PERCENTAGE OF COMFORT"

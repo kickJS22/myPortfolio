@@ -11,6 +11,7 @@ export function Nav() {
                     <li>
                         <a href="#mainText">{lan.contact.title}</a>
                         <a href="#about">{lan.about.title}</a>
+                        <a href="#cert">{lan.cert.title}</a>
                         <a href="#proAndSkiCont">{lan.proandski.projects.title}</a>
                         <a href="#experience">{lan.exp.title}</a>
                     </li>
