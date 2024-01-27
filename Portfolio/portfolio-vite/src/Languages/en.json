@@ -3,7 +3,7 @@
     "about":{
         "title":"ABOUT",
         "subtitle": "HI I'M JUAN 🖐️,",
-        "descrip": "I'm a junior cybersecurity analyst and a software developer oriented to fullstack web applications. <br/>Comfortable in the utilization of JavaScript and Python, and with NodeJS in the backend. <br/>My professional objective is learning the maximum that i can of my first experiences.",
+        "descrip": "I'm a junior cybersecurity analyst and a software developer oriented to fullstack web applications. <br/>Comfortable in the utilization of JavaScript and Python in the front-end, and NodeJS in the back-end. <br/>My professional objective is learning the maximum that i can of my first experiences.",
         "cvtext":"DOWNLOAD CV"
     },
     "cert":{
@@ -48,7 +48,7 @@
         } 
     },
     "contact":{
-        "title": "SOCIAL"
+        "title": "CONTACT"
     },
     "com": {
         "title":"PERCENTAGE OF COMFORT"

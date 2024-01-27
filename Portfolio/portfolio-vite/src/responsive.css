@@ -1,16 +1,19 @@
 /* 600 */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     html{
-	overflow-x:hidden;
+        overflow-x:hidden;
     }
     nav {
         margin-bottom: 20vw;
     }
-
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
     nav>h1 {
         font-size: 12vw;
         font-family: "Montserrat";
-        margin-top: 30vw;
+        margin-top: 10vw;
 		text-align:center;
 		text-wrap:wrap;
     }
@@ -21,34 +24,96 @@
         text-wrap:wrap;
     }
 
+
     #bus {
         font-size: 12vw;
     }
 
-    #stickyHeading>ul>li>a {
-        font-size: 2vw;
-        padding: 1vw;
-        margin: 1vw;
-        text-wrap: wrap;
-
+    #stickyHeading{
+        display: none;
     }
 
+    #resHeading{
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+        background-color: var(--bg-color);
+        /* backdrop-filter: blur(10px); */
+        
+    }
+    
+    #resHeadBut{
+        background-color: transparent;
+        border: none;
+        height: 5dvw;
+        width: 5dvw;
+        margin-right: 3dvw;
+    }
+    
 
-    #stickyHeading>ul>li>#lang{
-        width: 6vw;
-        height: 2vw;
+    #resHeadBut>img{
+        background-color: transparent;
+        border: none;
+        height: 5dvw;
+        width: 5dvw;
+        margin-right: 3dvw;
+        filter: var(--lanImg);
+    }
+    
+    #resHeadingCont{
+        z-index: 10000;
+        width: 100dvw;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        list-style: none;
+        backdrop-filter: blur(100px);
+        height: fit-content;
+        position:absolute;
+        margin: 0;
+        padding-top: 5dvw;
+        transform: translateY(-150dvw);
     }
 
-    #stickyHeading>ul>li>#theme{
-        width: 6vw;
-        height: 2vw;
+    .resAnchor{
+        margin-bottom: 10dvw;
+        color: white;
+        filter:var(--lanImg);
+        text-decoration: none;
+        font-family: "Montserrat";
+        font-weight: 800;
     }
 
-    #stickyHeading>ul>li>span>button {
-        width: inherit;
-        height: inherit;
+    #langRes{
+        width: 100dvw;
+        height: 5dvw;
+        border: none;
+        background-image: url("Lang/lanEs.png");
+        background-repeat: no-repeat;
+        filter: var(--lanImg);
+        background-size: 8%;
+        background-position: center center;
+        margin-bottom: 5dvw;
     }
 
+    #themeRes{
+        width: 100dvw;
+        height: 5dvw;
+        background-color: black;
+        background-image: url("public/iconsSVGS/moon.png");
+        background-repeat: no-repeat;
+        background-size: 3.5%;
+        background-position: center center;
+    }
+
+    .resBut{
+        width: 100dvw;
+        height: 5dvw;
+        background-color: transparent;
+        border: none;
+    }
+    
 
     #contact>a{
 		margin-top:10vw;

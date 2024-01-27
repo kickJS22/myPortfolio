@@ -9,11 +9,13 @@ import { LanThContext } from "./Context/ContextProvider";
 import { Experience } from "./Components/Experience"
 import { Contact } from "./Components/Email"
 import { Cert } from "./Components/Certifications"
+import { ResHead } from "./Components/ResponsiveHead"
 
 function App() {
   const { theme } = useContext(LanThContext)
   return (
     <main data-theme={theme}>
+      <ResHead />
       <Nav />
       <div id='PortInfo'>
         <About />

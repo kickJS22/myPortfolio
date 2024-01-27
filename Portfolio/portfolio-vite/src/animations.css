@@ -210,3 +210,29 @@ main[data-theme="black"]{
     animation-iteration-count: 1;
     animation-play-state: paused;
 }
+
+@keyframes resDown {
+    0%{
+        transform: translateY(-150dvw);
+    }
+    100%{
+        transform: translateY(0dvw);
+    }
+}
+
+@keyframes resUp {
+    0%{
+        transform: translateY(0dvw);
+    }
+    100%{
+        transform: translateY(-150dvw);
+    }
+}
+
+
+#resHeadingCont{
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}

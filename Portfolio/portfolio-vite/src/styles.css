@@ -22,15 +22,14 @@ main[data-theme="white"]{
     --bg-color: white;
     --text-color: black;
     --circle-color: white;
-    --scroll-bg:white;
     --scroll-bar: black;
+    --lanImg: invert(100%);
 }
 main[data-theme="black"]{
     --bg-color: black;
     --text-color: #dbdbdb; 
     --circle-color:#dbdbdb;
     --box-shadow-blue: 0px 0px 10px 2px rgba(219, 218, 255, 0.5);
-    --scroll-bg:black;
     --scroll-bar: white;
 }
 main {
@@ -40,23 +39,19 @@ main {
 }
 
 ::-webkit-scrollbar {
-    width: 0.8dvw;               
+    width: 0.6dvw; 
+    border-radius: 1dvw;
 }
-
-::-webkit-scrollbar-track {
-    background: white;        
-  }
   
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(221, 221, 221);
-    border-radius: 20px;       
-    border: 3px solid white;  
+    background-color:rgb(163, 163, 163);
+    border-radius: 1dvw;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(0, 0, 0);
-}
 
+#resHeading{
+    display: none;
+}
 
 #mainText{
     margin-bottom: 20vw;
@@ -93,27 +88,33 @@ main {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 750;
-    font-size: 1.2vw;
+    font-size: 0.98vw;
     border-radius: 2vw;
     font-family: "Montserrat";
-    padding: 0.4vw;
-    
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 0.5dvw;
 }
 
-#stickyHeading>ul>li>#lang{
+#lang{
     display: flex;
     margin-left: 1.6vw;
     width: 3vw;
-    border: 0.15vw solid black;
+    border: 0.15vw solid white;
     height: 1vw;
     border-radius: 1vw;
-    background-size:cover;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-size: 38%;
     background-position:top;
-    background-image: url("../public/Flags/Argentina.png");
+    background-image: url("public/Lang/lanEs.png");
+    filter: var(--lanImg);
     transition: 0.1s;
+    margin-top: 0.5dvw;
 }
 
-#stickyHeading>ul>li>#theme{
+#theme{
+    margin-top: 0.5dvw;
     margin-left: 1vw;
     display: flex;
     width: 3vw;
@@ -124,7 +125,7 @@ main {
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../public/iconsSVGS/moon.png");
+    background-image: url("public/iconsSVGS/moon.png");
     transition: 0.1s;
 }
 

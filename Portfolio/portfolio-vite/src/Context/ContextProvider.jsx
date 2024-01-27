@@ -9,6 +9,9 @@ export function LanThContextProvider(props) {
     const switchLanRef = useRef();
     const switchThemeRef = useRef();
 
+    const switchLanRefRes = useRef();
+    const switchThemeRefRes = useRef();
+
     const SkillsH1Ref = useRef();
     const SkillsLiG1 = useRef()
     const SkillsLiG2 = useRef()
@@ -32,10 +35,23 @@ export function LanThContextProvider(props) {
     function getAndChangeLan(){
         if(lan == en){
             setLan(es);
-            switchLanRef.current.style.backgroundImage = "url(Flags/Usa.png)";
+            console.log(switchLanRef.current)
+            switchLanRef.current.style.backgroundImage = "url(public/Lang/lanEn.png)";
         } else if (lan == es){
             setLan(en);
-            switchLanRef.current.style.backgroundImage = "url(Flags/Argentina.png)";
+            switchLanRef.current.style.backgroundImage = "url(public/Lang/lanEs.png)";
+        }
+        
+    }
+
+    function getAndChangeLanRes(){
+        if(lan == en){
+            setLan(es);
+            switchLanRefRes.current.style.backgroundImage = "url(public/Lang/lanEn.png)";
+            console.log(switchLanRefRes.current.style.backgroundImage)
+        } else if (lan == es){
+            setLan(en);
+            switchLanRefRes.current.style.backgroundImage = "url(public/Lang/lanEs.png)";
         }
         
     }
@@ -54,12 +70,24 @@ export function LanThContextProvider(props) {
         }
     }
     
+    function changeThemeRes(){
+        if(theme == "white"){
+            setTheme("black");
+            switchThemeRefRes.current.style.backgroundImage = "url(iconsSVGS/sun.png)";
+            switchThemeRefRes.current.style.backgroundColor = "white"
+        } else if(theme == "black"){
+            switchThemeRefRes.current.style.backgroundImage = "url(iconsSVGS/moon.png)";
+            switchThemeRefRes.current.style.backgroundColor = "black";
+            setTheme("white");
+        }
+    }
 
     return (
         <LanThContext.Provider value={{
                 lan, theme, changeTheme, en, es, SkillsH1Ref, SkillsLiG1, SkillsLiG2, 
                 SkillsLiG3, SkillsLiG4, SkillsLiG5, JSref, Reref, Viref, Eleref, Htref,
-                Csref, Saref, Pyref, Djref, SQref, getAndChangeLan, switchLanRef, switchThemeRef
+                Csref, Saref, Pyref, Djref, SQref, getAndChangeLan, switchLanRef, switchThemeRef,
+                switchLanRefRes, switchThemeRefRes, getAndChangeLanRes, changeThemeRes
             }}>
             {props.children}
         </LanThContext.Provider>
