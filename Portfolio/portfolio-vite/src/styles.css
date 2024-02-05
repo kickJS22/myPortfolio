@@ -26,7 +26,7 @@ main[data-theme="white"]{
     --lanImg: invert(100%);
 }
 main[data-theme="black"]{
-    --bg-color: black;
+    --bg-color: #140112;
     --text-color: #dbdbdb; 
     --circle-color:#dbdbdb;
     --box-shadow-blue: 0px 0px 10px 2px rgba(219, 218, 255, 0.5);

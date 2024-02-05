@@ -139,14 +139,6 @@ nav>h2 {
     animation-iteration-count: infinite;
 }
 
-main[data-theme="white"]{
-    --bg-color: white;
-}
-
-main[data-theme="black"]{
-    --bg-color: black;
-}
-
 @keyframes changeBack {
     0% {
         color: white;
