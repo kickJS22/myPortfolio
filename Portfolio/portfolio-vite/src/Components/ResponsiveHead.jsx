@@ -1,6 +1,7 @@
 import { useContext, useRef } from "react"
 import { LanThContext } from "../Context/ContextProvider"
 
+
 export function ResHead() {
 
     const { lan, switchLanRefRes, getAndChangeLanRes, changeThemeRes, switchThemeRefRes } = useContext(LanThContext)

@@ -22,16 +22,21 @@
         "projects":{
             "title":"PROYECTOS",
             "pro1": {
+                "title": "1. Packet Sniffer",
+                "descrip": "Es una aplicación de CLI que cumple la función de packet sniffer creada usando la librería <a target=\"_blank\" href=\"https://scapy.readthedocs.io/en/latest/index.html\">Scapy</a> para <a target=\"_blank\" href=\"https://www.python.org/\">Python</a>. La app captura información como por ejemplo: Protocolos, direcciones IP, servicios, tipos, ID, etc.<br/>En este projecto profundize en el conocimiento de <a target=\"_blank\" href=\"https://www.python.org/\">Python</a> y sus métodos para el manejo de la red por código. La app se inspira en <a target=\"_blank\" href=\"https://www.wireshark.org/\">Wireshark</a>, pero añade algunas funcionalidades.<br/>En el futuro quiero agregar una UI que facilite la lectura de los datos capturados.<br/>",
+                "date": "Frebrero - 2024"
+            },
+            "pro2": {
                 "title": "1. BookList",
                 "descrip":  "Es una aplicación para organizar mi biblioteca personal hecha con el framework de <a target=\"_blank\" href=\"https://www.python.org/\">Python</a>, <a target=\"_blank\" href=\"https://www.djangoproject.com/\">Django</a><br />\nEn este projecto aprendí como utilizar bases de datos con <a target=\"_blank\" href=\"https://www.sqlite.org/index.html\">SQLite</a> y el sistema de url's\nde <a target=\"_blank\" href=\"https://www.djangoproject.com/\">Django</a>, también es mi primera experiencia con <a target=\"_blank\" href=\"https://www.python.org/\">Python</a>.<br />\nEn el futuro quiero agregar un sistema de edición y borrado de elementos, además de componetizar la aplicación con React <br />",
                 "date": "Febrero - 2023"
             },
-            "pro2": {
+            "pro3": {
                 "title": "2. Vite Calculator",
                 "descrip" : " Una calculadora básica hecha con <a href=\"https://vitejs.dev/\" target=\"_blank\">Vite.js</a>, una herramienta front-end para <a href=\"https://es.react.dev/\" target=\"_blank\">React.js</a>. <br /> En este projecto aprendí a utilizar los hooks de React, y algunos estilos de CSS. El problema mas grande que tuve fue como calcular correctamente las operaciones aritméticas. <br /> En el futuro planeo expandir la aplicación añadiendo funcionalidades como raíces cuadradas y potencias<br />",
                 "date": "Julio - 2023"
             },
-            "pro3":{
+            "pro4":{
                 "title": "3. Code-Note App",
                 "descrip": "Es una aplicación de notas personal hecha con el framework de <a target=\"_blank\" href=\"https://es.wikipedia.org/wiki/JavaScript\">Javascript</a>, <a target=\"_blank\" href=\"https://www.electronjs.org/es/\">Electron</a>. <br /> En este proyecto aprendí a usar la Web API de \"localStorage\" para almacenar los objetos. Y como manipular elementos del DOM con sus respectivas animaciones via script. <br /> En el futuro quiero rehacerlo usando React y usar alguna base de dataos como <a target=\"_blank\" href=\"https://www.sqlite.org/index.html\">SQLite</a>.<br />",
                 "date" : "Junio - 2023"

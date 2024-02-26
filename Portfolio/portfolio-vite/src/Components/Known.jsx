@@ -17,21 +17,37 @@ export function Skills() {
     
     const {JSref, Reref, Viref, Eleref, Htref, Csref, Saref, Pyref, Djref, SQref} = useContext(LanThContext);
 
-    const proj1 = [JSref,Htref,Csref,Saref,Pyref,Djref,SQref];
-    const proj2=[Reref,JSref,Viref,Htref,Csref,Saref];
-    const proj3= [JSref,Htref,Csref,Eleref];
-
+    const proj1 =[Pyref]
+    const proj2 = [JSref,Htref,Csref,Saref,Pyref,Djref,SQref];
+    const proj3=[Reref,JSref,Viref,Htref,Csref,Saref];
+    const proj4= [JSref,Htref,Csref,Eleref];
     return (
         <article id="proAndSkiCont" >
             <section id="projectsCont">
                 <h1 id="projectsText">{lan.proandski.projects.title}</h1>
                 <ul id="projects">
+
                 <div onMouseEnter={()=>{mouseOn(proj1)}} onMouseLeave={()=>{mouseOut(proj1)}} >
                     <h2>{lan.proandski.projects.pro1.title}</h2>
                     <span>
                         <p>
                             {parse(lan.proandski.projects.pro1.descrip)}
                             <label>{lan.proandski.projects.pro1.date}</label>
+                        </p>
+                        <img src="ProjectsPhotos/packetSniff.png" alt="Bustillos Packet Sniffer.png" />
+
+                    </span>
+                    <footer>
+                        <a href="https://github.com/kickJS22/bustillos-packet-sniffer" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="Book List code" /></a>
+                    </footer>
+                </div>
+
+                <div onMouseEnter={()=>{mouseOn(proj2)}} onMouseLeave={()=>{mouseOut(proj2)}} >
+                    <h2>{lan.proandski.projects.pro2.title}</h2>
+                    <span>
+                        <p>
+                            {parse(lan.proandski.projects.pro2.descrip)}
+                            <label>{lan.proandski.projects.pro2.date}</label>
                         </p>
                         <img src="ProjectsPhotos/BookList.png" alt="BookList.png" />
 
@@ -40,12 +56,13 @@ export function Skills() {
                         <a href="https://github.com/kickJS22/BookList" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="Book List code" /></a>
                     </footer>
                 </div>
-                <div onMouseEnter={()=>{mouseOn(proj2)}} onMouseLeave={()=>{mouseOut(proj2)}}>
-                    <h2>{lan.proandski.projects.pro2.title}</h2>
+
+                <div onMouseEnter={()=>{mouseOn(proj3)}} onMouseLeave={()=>{mouseOut(proj3)}}>
+                    <h2>{lan.proandski.projects.pro3.title}</h2>
                     <span>
                         <p>
-                            {parse(lan.proandski.projects.pro2.descrip)}
-                            <label>{lan.proandski.projects.pro2.date}</label>
+                            {parse(lan.proandski.projects.pro3.descrip)}
+                            <label>{lan.proandski.projects.pro3.date}</label>
                         </p>
                         <img src="ProjectsPhotos/viteCalculator.png" alt="Vite Calculator.png" />
 
@@ -55,12 +72,13 @@ export function Skills() {
                         <a href="https://github.com/kickJS22/ViteCalculator" target="_blank"><img src="iconsSVGS/icons8-github.svg" alt="Vite calculator live demo" /></a>
                     </footer>
                 </div>
-                <div onMouseEnter={()=>{mouseOn(proj3)}} onMouseLeave={()=>{mouseOut(proj3)}}>
-                    <h2>{lan.proandski.projects.pro3.title}</h2>
+
+                <div onMouseEnter={()=>{mouseOn(proj4)}} onMouseLeave={()=>{mouseOut(proj4)}}>
+                    <h2>{lan.proandski.projects.pro4.title}</h2>
                     <span>
                         <p>
-                            {parse(lan.proandski.projects.pro3.descrip)}
-                            <label>{lan.proandski.projects.pro3.date}</label>
+                            {parse(lan.proandski.projects.pro4.descrip)}
+                            <label>{lan.proandski.projects.pro4.date}</label>
                         </p>
                         <img src="ProjectsPhotos/CodeElectron.png" alt="CodeElectron.png" />
 
