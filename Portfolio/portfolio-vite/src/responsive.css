@@ -89,7 +89,7 @@
         width: 100dvw;
         height: 5dvw;
         border: none;
-        background-image: url("Lang/lanEs.png");
+        background-image: url("/Lang/lanEs.png");
         background-repeat: no-repeat;
         filter: var(--lanImg);
         background-size: 8%;
@@ -101,7 +101,7 @@
         width: 100dvw;
         height: 5dvw;
         background-color: black;
-        background-image: url("public/iconsSVGS/moon.png");
+        background-image: url("/iconsSVGS/moon.png");
         background-repeat: no-repeat;
         background-size: 3.5%;
         background-position: center center;

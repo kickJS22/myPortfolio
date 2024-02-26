@@ -7,7 +7,7 @@ export function ResHead() {
     const { lan, switchLanRefRes, getAndChangeLanRes, changeThemeRes, switchThemeRefRes } = useContext(LanThContext)
     return (
         <section id="resHeading">
-            <button id="resHeadBut" onClick={() => { startAnim() }}><img src="public/menu.svg" alt="" /></button>
+            <button id="resHeadBut" onClick={() => { startAnim() }}><img src="/menu.svg" alt="" /></button>
             <ul id="resHeadingCont">
                 <a className="resAnchor" href="#mainText">{lan.contact.title}</a>
                 <a className="resAnchor" href="#about">{lan.about.title}</a>

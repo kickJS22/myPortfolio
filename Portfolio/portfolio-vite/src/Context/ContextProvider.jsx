@@ -36,10 +36,10 @@ export function LanThContextProvider(props) {
         if(lan == en){
             setLan(es);
             console.log(switchLanRef.current)
-            switchLanRef.current.style.backgroundImage = "url(public/Lang/lanEn.png)";
+            switchLanRef.current.style.backgroundImage = "url(/Lang/lanEn.png)";
         } else if (lan == es){
             setLan(en);
-            switchLanRef.current.style.backgroundImage = "url(public/Lang/lanEs.png)";
+            switchLanRef.current.style.backgroundImage = "url(/Lang/lanEs.png)";
         }
         
     }
@@ -47,11 +47,11 @@ export function LanThContextProvider(props) {
     function getAndChangeLanRes(){
         if(lan == en){
             setLan(es);
-            switchLanRefRes.current.style.backgroundImage = "url(public/Lang/lanEn.png)";
+            switchLanRefRes.current.style.backgroundImage = "url(/Lang/lanEn.png)";
             console.log(switchLanRefRes.current.style.backgroundImage)
         } else if (lan == es){
             setLan(en);
-            switchLanRefRes.current.style.backgroundImage = "url(public/Lang/lanEs.png)";
+            switchLanRefRes.current.style.backgroundImage = "url(/Lang/lanEs.png)";
         }
         
     }
@@ -61,10 +61,10 @@ export function LanThContextProvider(props) {
     function changeTheme(){
         if(theme == "white"){
             setTheme("black");
-            switchThemeRef.current.style.backgroundImage = "url(iconsSVGS/sun.png)";
+            switchThemeRef.current.style.backgroundImage = "url(/iconsSVGS/sun.png)";
             switchThemeRef.current.style.backgroundColor = "white"
         } else if(theme == "black"){
-            switchThemeRef.current.style.backgroundImage = "url(iconsSVGS/moon.png)";
+            switchThemeRef.current.style.backgroundImage = "url(/iconsSVGS/moon.png)";
             switchThemeRef.current.style.backgroundColor = "black";
             setTheme("white");
         }
@@ -73,10 +73,10 @@ export function LanThContextProvider(props) {
     function changeThemeRes(){
         if(theme == "white"){
             setTheme("black");
-            switchThemeRefRes.current.style.backgroundImage = "url(iconsSVGS/sun.png)";
+            switchThemeRefRes.current.style.backgroundImage = "url(/iconsSVGS/sun.png)";
             switchThemeRefRes.current.style.backgroundColor = "white"
         } else if(theme == "black"){
-            switchThemeRefRes.current.style.backgroundImage = "url(iconsSVGS/moon.png)";
+            switchThemeRefRes.current.style.backgroundImage = "url(/iconsSVGS/moon.png)";
             switchThemeRefRes.current.style.backgroundColor = "black";
             setTheme("white");
         }

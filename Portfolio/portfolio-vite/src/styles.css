@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("../public/Fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("/Fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "Montserrat Italic";
-    src: url("../public/Fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("/Fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 html,body{
@@ -107,7 +107,7 @@ main {
     background-repeat: no-repeat;
     background-size: 38%;
     background-position:top;
-    background-image: url("public/Lang/lanEs.png");
+    background-image: url("/Lang/lanEs.png");
     filter: var(--lanImg);
     transition: 0.1s;
     margin-top: 0.5dvw;
@@ -125,7 +125,7 @@ main {
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("public/iconsSVGS/moon.png");
+    background-image: url("/iconsSVGS/moon.png");
     transition: 0.1s;
 }
 
