@@ -29,11 +29,11 @@ export function ResHead() {
 function startAnim(e){
     let menu = document.querySelector("#resHeadingCont")
     menu.style.animationName="resDown"
-    console.log("pressed resDown : ", menu.style.animationName)
+    // console.log("pressed resDown : ", menu.style.animationName)
     
     document.addEventListener("click", (e)=>{
         if(e.target.parentElement.id != "resHeadBut"){
-            console.log("another Button")
+            // console.log("another Button")
             menu.style.animationName="resUp"
         }
     })

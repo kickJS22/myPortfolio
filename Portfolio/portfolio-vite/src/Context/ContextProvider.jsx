@@ -35,7 +35,7 @@ export function LanThContextProvider(props) {
     function getAndChangeLan(){
         if(lan == en){
             setLan(es);
-            console.log(switchLanRef.current)
+            // console.log(switchLanRef.current)
             switchLanRef.current.style.backgroundImage = "url(Lang/lanEn.png)";
         } else if (lan == es){
             setLan(en);
@@ -48,7 +48,7 @@ export function LanThContextProvider(props) {
         if(lan == en){
             setLan(es);
             switchLanRefRes.current.style.backgroundImage = "url(Lang/lanEn.png)";
-            console.log(switchLanRefRes.current.style.backgroundImage)
+            // console.log(switchLanRefRes.current.style.backgroundImage)
         } else if (lan == es){
             setLan(en);
             switchLanRefRes.current.style.backgroundImage = "url(Lang/lanEs.png)";
