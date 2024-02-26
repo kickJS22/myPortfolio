@@ -3,6 +3,10 @@ import { ObserverFunctionallity } from "./Functions/Observer";
 import { useContext } from "react";
 import { LanThContext } from "../Context/ContextProvider";
 import parse from 'html-react-parser';
+
+import EngCV from "/CV/CV-English.pdf"
+import EsCV from "/CV/CV-Español.pdf"
+
 export function About() {
     const { en, lan } = useContext(LanThContext)
     const h1Ref = useRef();
@@ -22,7 +26,7 @@ export function About() {
                 <p ref={pRef}>{parse(lan.about.descrip)}</p>
                 <img ref={imgRef} src="perfil.jpg" alt="Me.jpg" />
             </div>
-            <a ref={aRef} target="_blank" href={ lan == en ? "/CV/CV-English.pdf" : "/CV/CV-Español.pdf"} >{lan.about.cvtext}<img src="iconsSVGS/arrowICON.png" alt="Cv.pdf" /></a>
+            <a ref={aRef} target="_blank" href={ lan == en ? EngCV : EsCV} >{lan.about.cvtext}<img src="iconsSVGS/arrowICON.png" alt="Cv.pdf" /></a>
         </section>
     )
 }
