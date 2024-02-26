@@ -88,7 +88,7 @@ main {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 750;
-    font-size: 0.98vw;
+    font-size: 1.2vw;
     border-radius: 2vw;
     font-family: "Montserrat";
     padding-left: 1vw;
@@ -99,9 +99,9 @@ main {
 #lang{
     display: flex;
     margin-left: 1.6vw;
-    width: 3vw;
+    width: 3.6vw;
     border: 0.15vw solid white;
-    height: 1vw;
+    height: 1.2vw;
     border-radius: 1vw;
     background-size:contain;
     background-repeat: no-repeat;
@@ -117,9 +117,9 @@ main {
     margin-top: 0.5dvw;
     margin-left: 1vw;
     display: flex;
-    width: 3vw;
+    width: 3.6vw;
     border: 0.15vw solid black;
-    height: 1vw;
+    height: 1.2vw;
     border-radius: 1vw;
     background-color: black;
     background-size:contain;
@@ -144,7 +144,7 @@ nav {
 }
 
 nav>h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: "Montserrat";
     font-weight: 900;
     color: var(--text-color);
@@ -162,7 +162,7 @@ nav>h2 {
 }
 
 #bus {
-    font-size: 4vw;
+    font-size: 5vw;
     background: #CFA108;
     background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
     -webkit-background-clip: text;
@@ -238,7 +238,7 @@ nav>h2 {
     height: auto;
     width: 60vw;
     font-family: "Montserrat";
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     justify-self: flex-start;
     align-self: flex-start;
     color: var(--text-color);
@@ -250,10 +250,10 @@ nav>h2 {
     font-family: "Montserrat Italic";
     color: white;
     border-radius: 2vw;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     font-weight: 900;
     border: none;
-    width: 12vw;
+    width: 13vw;
     height: auto;
     align-self: center;
     text-decoration: none;
@@ -280,7 +280,7 @@ nav>h2 {
 
 #cert>h1{
     font-weight: 900;
-    font-size: 3dvw;
+    font-size: 4dvw;
     text-align: center;
     margin-bottom: 10dvw;
 }
@@ -300,7 +300,7 @@ nav>h2 {
 
 .certEle{
     padding: 2dvw;
-    font-size: 0.7dvw;
+    font-size: 0.85dvw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -341,7 +341,7 @@ nav>h2 {
     margin: 0;
     margin-top: 4vw;
     font-family: "Montserrat";
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 900;
     color: var(--text-color);
 }
@@ -358,7 +358,7 @@ nav>h2 {
 
 #projects>div>h2{
     font-family: "Montserrat Italic";
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: var(--text-color);
 }
 
@@ -369,7 +369,7 @@ nav>h2 {
 }
 
 #projects>div>span>p{
-    font-size: 1vw;
+    font-size: 1.3vw;
     padding-right: 2vw;
     font-family: "Montserrat";
     line-height: 1.6vw;
@@ -434,7 +434,7 @@ nav>h2 {
 #skills>h1 {
     margin: 0;
     font-family: "Montserrat";
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: 900;
     color: var(--text-color);
     padding-bottom: 4dvw;
