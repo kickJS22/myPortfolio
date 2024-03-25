@@ -23,7 +23,7 @@
             "title":"PROYECTOS",
             "pro1": {
                 "title": "1. Packet Sniffer",
-                "descrip": "Es una aplicación de CLI que cumple la función de packet sniffer creada usando la librería <a target=\"_blank\" href=\"https://scapy.readthedocs.io/en/latest/index.html\">Scapy</a> para <a target=\"_blank\" href=\"https://www.python.org/\">Python</a>. La app captura información como por ejemplo: Protocolos, direcciones IP, servicios, tipos, ID, etc.<br/>En este projecto profundize en el conocimiento de <a target=\"_blank\" href=\"https://www.python.org/\">Python</a> y sus métodos para el manejo de la red por código. La app se inspira en <a target=\"_blank\" href=\"https://www.wireshark.org/\">Wireshark</a>, pero añade algunas funcionalidades.<br/>En el futuro quiero agregar una UI que facilite la lectura de los datos capturados.<br/>",
+                "descrip": "Es una aplicación de CLI que cumple la función de packet sniffer creada usando la librería <a target=\"_blank\" href=\"https://scapy.readthedocs.io/en/latest/index.html\">Scapy</a> para <a target=\"_blank\" href=\"https://www.python.org/\">Python</a>. La app captura información como por ejemplo: Protocolos, direcciones IP, servicios, tipos, ID, etc.<br/>En este projecto profundice en el conocimiento de <a target=\"_blank\" href=\"https://www.python.org/\">Python</a> y sus métodos para el manejo de la red por código. La app se inspira en <a target=\"_blank\" href=\"https://www.wireshark.org/\">Wireshark</a>, pero añade algunas funcionalidades.<br/>En el futuro quiero agregar una UI que facilite la lectura de los datos capturados.<br/>",
                 "date": "Frebrero - 2024"
             },
             "pro2": {
