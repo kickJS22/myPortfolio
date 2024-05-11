@@ -13,7 +13,7 @@ export function ResHead() {
                 <a className="resAnchor" href="#about">{lan.about.title}</a>
                 <a className="resAnchor" href="#cert">{lan.cert.title}</a>
                 <a className="resAnchor" href="#proAndSkiCont">{lan.proandski.projects.title}</a>
-                <a className="resAnchor" href="#experience">{lan.exp.title}</a>
+                {/* <a className="resAnchor" href="#experience">{lan.exp.title}</a> */}
 
                 <span id="langRes" ref={switchLanRefRes}>
                     <button className="resBut" onClick={() => { getAndChangeLanRes() }}></button>

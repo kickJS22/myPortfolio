@@ -106,6 +106,7 @@ export function Skills() {
                             <h4 ref={Djref}>Django</h4>
 							<h4>Git</h4>
                             <h4>C#</h4>
+                            <h4>C</h4>
                         </div>
                         <h2>{lan.proandski.skills.subtitles.front}</h2>
                     </li>

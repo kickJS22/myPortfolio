@@ -164,7 +164,7 @@ nav>h2 {
 #bus {
     font-size: 5vw;
     background: #CFA108;
-    background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+    background: linear-gradient(to right, #CFA108 0%,#7cb9ff  75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.5s;
@@ -258,7 +258,7 @@ nav>h2 {
     align-self: center;
     text-decoration: none;
     background: #CFA108;
-    background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+    background: linear-gradient(to right, #CFA108 0%, #7cb9ff 75%);
     transition: 0.7s;
 }
 
@@ -379,7 +379,7 @@ nav>h2 {
 #projects>div>span>p>a{
     font-weight: 800;
     background: #CFA108;
-    background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+    background: linear-gradient(to right, #CFA108 0%, #7cb9ff 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline 0.13vw blueviolet;
@@ -536,7 +536,7 @@ nav>h2 {
     font-size: 2dvw;
     margin: 0;
     background: #CFA108;
-    background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+    background: linear-gradient(to right, #CFA108 0%, #7cb9ff  75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
@@ -576,7 +576,7 @@ nav>h2 {
 #mailContact>form>section>label{
     font-family: 'Montserrat';
     background: #CFA108;
-    background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+    background: linear-gradient(to right, #CFA108 0%, #7cb9ff 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
@@ -623,7 +623,7 @@ nav>h2 {
     border: none;
     box-shadow: 0px 0px 17px 3px rgba(158, 156, 253, 0.2);
     background: #CFA108;
-    background: linear-gradient(to right, #CFA108 0%, #C270CF 75%);
+    background: linear-gradient(to right, #CFA108 0%, #5f8fc5  75%);
     cursor: pointer;
     transition: 0.5s;
 }

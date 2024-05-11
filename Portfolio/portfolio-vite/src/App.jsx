@@ -21,7 +21,7 @@ function App() {
         <About />
         <Cert />
         <Skills />
-        <Experience/>
+        {/* <Experience/> */}
         <Contact />
       </div>
     </main>
